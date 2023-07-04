@@ -8,6 +8,8 @@
     /* border: 1px solid  green; */
   background-color: #212121;
     display: flex;
+    position: fixed;
+    top: 0;
 }
 #divfirst{
     width: 20%;
@@ -77,6 +79,9 @@ margin-top: 10px;
     justify-content: space-around;
     align-items: center; 
 }
+/* #brand:hover{
+    background-color: white;
+} */
 #search{
     width: 50%;
     /* height: 45px; */

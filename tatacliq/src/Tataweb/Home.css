@@ -1,0 +1,134 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#Home{
+    border: 1px solid gray;
+    width: 100%;
+    background-color: white;
+    margin-top: 100px;
+}
+#maincontainer{
+width: 100%;
+/* border: 1px solid black; */
+}
+#container2{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#container2>div{
+    width: 8%;
+    /* border: 1px solid red; */
+    height: 100px; 
+
+}
+#container2>div>img{
+    width: 100%;
+    height: 100px;
+}
+#container3{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+
+}  
+#container3>div{
+    width: 25%;
+    height: 70px;
+    border: 1px solid gray;
+    margin-top: 20px;
+
+}
+#container3>div>img{
+    width: 100%;
+    height: 70px;
+}
+#container4{
+    width: 100%;
+    border: 1px solid red;
+    margin-top: 30px;
+}
+#image2{
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+   
+}
+#image2>div{
+    width: 12%;
+    /* border: 1px solid gray; */
+    margin-left: 60px ;
+    padding-top: 30px;
+   
+}
+#image2>div>img{
+    width: 100%;
+    height: 250px;
+    padding-top: 60px;
+}
+
+#container5{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+#container5>img{
+  padding-left: 270px;
+  height: 100px;
+}
+#divimg2{
+    width: 100%;
+    /* border: 1px solid gray; */
+    margin-top: 50px;
+    display: flex;
+}
+#divimg2>div{
+    width: 12%;
+    height: 220px;
+    border: 1px solid gray;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+#divimg2>div>img{
+    width: 100%;
+    height: 220px;
+}
+#container6{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+#container6>img{
+  padding-left: 270px;
+  height: 100px;
+}
+#divimag3{
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    margin-top: 50px;
+    padding-left: 60px;
+}
+#divimag3>div{
+width: 12%;
+border: 1px solid gray;
+
+}
+#divimg3>div>img{
+    height: 220px; 
+
+}
+
+
+
+
+
