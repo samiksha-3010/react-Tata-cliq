@@ -57,7 +57,8 @@ const Home = () => {
               </div>
           </div>
           <div id='container4'>
-              <div>image..... </div>
+             
+                 { <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344408094.jpg'/> }
               <div id='image2'> 
                <div>
                 <img src='https://assets.tatacliq.com/medias/sys_master/images/47596857851934.jpg'/>
@@ -99,17 +100,57 @@ const Home = () => {
                 <img src='https://assets.tatacliq.com/medias/sys_master/images/47513577619486.jpg'/>
               </div>
               <div>
-                <img src=''/>
+                <img src='https://assets.tatacliq.com/medias/sys_master/images/47513577619486.jpg'/>
               </div>
               <div>
-                <img src=''/>
+                <img src='https://assets.tatacliq.com/medias/sys_master/images/47513577619486.jpg'/>
               </div>
               <div>
-                <img src=''/>
-              </div>
+                <img src='https://assets.tatacliq.com/medias/sys_master/images/47513577619486.jpg'/>
+              </div>     
+            </div>
+            <div id='container7'>
+                   <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344342558.jpg'/>
+                   <div id='divimag4'>
+                   <div>
+                    <img src='https://assets.tatacliq.com/medias/sys_master/images/46926357266462.jpg'/>
+                   </div>
+                   <div>
+                    <img src='https://assets.tatacliq.com/medias/sys_master/images/46926357331998.jpg'/>
+                   </div>
+                   <div>
+                    <img src='https://assets.tatacliq.com/medias/sys_master/images/46926357397534.jpg'/>
+                   </div>
+                   <div>
+                    <img src='https://assets.tatacliq.com/medias/sys_master/images/46926357594142.jpg'/>
 
-                     {/* <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344408094.jpg'/> */}
-                     {/* <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344342558.jpg'/> */}
+                   </div>
+                   </div>
+                   <div id='container8'>
+                   <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344277022.jpg'/>
+                    <div id='divimag5'>
+                      <div>
+                         <img src='https://assets.tatacliq.com/medias/sys_master/images/46926361329694.jpg'/>
+                      </div>
+
+                      <div>
+                        <img src='https://assets.tatacliq.com/medias/sys_master/images/46926361198622.jpg'/>
+                      </div>
+
+                    </div>
+
+                    <div id='divimag5'>
+                      <div>
+                         <img src='https://assets.tatacliq.com/medias/sys_master/images/47603263438878.jpg'/>
+                      </div>
+
+                      <div>
+                        <img src='https://assets.tatacliq.com/medias/sys_master/images/47603263569950.jpg'/>
+                      </div>
+
+                    </div>
+                    {/* <img src='https://assets.tatacliq.com/medias/sys_master/images/46372574658590.jpg'/> */}
+              </div>
             </div>
 
           </div>

@@ -5,7 +5,7 @@
     padding: 0;
 }
 #Home{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     width: 100%;
     background-color: white;
     margin-top: 100px;
@@ -44,7 +44,7 @@ width: 100%;
 #container3>div{
     width: 25%;
     height: 70px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     margin-top: 20px;
 
 }
@@ -54,13 +54,18 @@ width: 100%;
 }
 #container4{
     width: 100%;
-    border: 1px solid red;
-    margin-top: 30px;
+    /* border: 1px solid red; */
+    margin-top: 60px;
 }
+#container4>img{
+    padding-left: 270px;
+    height: 100px;
+  }
 #image2{
     width: 100%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     display: flex;
+    margin-top: 60px;
    
 }
 #image2>div{
@@ -79,7 +84,7 @@ width: 100%;
 #container5{
     width: 100%;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 #container5>img{
   padding-left: 270px;
@@ -94,7 +99,7 @@ width: 100%;
 #divimg2>div{
     width: 12%;
     height: 220px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     margin-top: 50px;
     margin-left: 60px;
 }
@@ -109,26 +114,82 @@ width: 100%;
 }
 #container6>img{
   padding-left: 270px;
-  height: 100px;
+  margin-top: 60px;
+  width: 70px;
 }
 #divimag3{
     width: 100%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     display: flex;
     margin-top: 50px;
     padding-left: 60px;
 }
 #divimag3>div{
-width: 12%;
-border: 1px solid gray;
+width: 25%;
+padding-left: 60px;
+
+/* border: 1px solid gray; */
 
 }
 #divimg3>div>img{
     height: 220px; 
+    /* width: 15%; */
 
 }
+/* #divimg3>div>img:hover{
+    background-color: none;
+} */
 
-
-
-
+#container7{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    height: 400px;
+}
+#container7>img{
+    padding-left: 270px;
+    margin-top: 30px;
+    width: 70%;
+  }
+  #divimag4{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  padding-left: 60px;
+}
+#divimag4>div{
+    width: 15%;
+    padding-left: 60px;
+    }
+    #divimag4>div>img{
+        width: 100%;
+        height: 220px;
+    }
+      #container8{ 
+        width: 100%;
+        height: 100px;
+        margin-top: 30px;
+        /* height: 400px; */
+    }  
+    #container8>img{
+        padding-left: 270px;
+        height: 100px;
+      }
+      #divimag5{
+        width: 100%;
+        display: flex;
+        /* border: 1px solid black; */
+      }
+      #divimag5>div{
+        height: 250px;
+        width: 25%;
+        border: 1px solid black;
+        /* margin: auto; */
+        margin-top: 50px;
+        margin-left: 100px;
+      }
+      #divimag5>div>img{
+        width: 100%;
+        height: 100%;
+      }
 
