@@ -80,7 +80,7 @@ const Home = () => {
       {/* only for title background  */}
       <div className='title-image-backgroung'>
         <div className='title-image-backgroung-imageHolder'>
-          <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344211486.jpg' />
+          <img src='https://assets.tatacliq.com/medias/sys_master/images/45993134948382.jpg' />
         </div>
       </div>
       {/* for product showing  */}
@@ -128,7 +128,7 @@ const Home = () => {
          {/* only for title background  */}
       <div className='title-image-backgroung'>
         <div className='title-image-backgroung-imageHolder'>
-          <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344277022.jpg' />
+          <img src='https://assets.tatacliq.com/medias/sys_master/images/45993137373214.jpg' />
         </div>
       </div>
 
@@ -154,7 +154,7 @@ const Home = () => {
           {/* *********Feature Brands*********** */}
           <div className='title-image-backgroung'>
         <div className='title-image-backgroung-imageHolder'>
-          <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344277022.jpg' />
+          <img src='https://assets.tatacliq.com/medias/sys_master/images/45993134948382.jpg' />
         </div>
       </div>
 
@@ -182,7 +182,7 @@ const Home = () => {
 
           <div className='title-image-backgroung'>
         <div className='title-image-backgroung-imageHolder'>
-          <img src='https://assets.tatacliq.com/medias/sys_master/images/47520344277022.jpg' />
+          <img src='https://assets.tatacliq.com/medias/sys_master/images/47636183449630.jpg' />
         </div>
       </div>
 
