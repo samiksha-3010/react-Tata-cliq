@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
-import {Route,Routes} from 'react-router-dom';
+import {Route,Router,Routes} from 'react-router-dom';
 import Navbar from './Tataweb/Navbar';
 import Footer from './Tataweb/Footer';
 import Home from './Tataweb/Home';
+import Men from './Tataweb/Men';
+
 
 function App() {
 
@@ -14,6 +16,9 @@ function App() {
       <Routes>
       
         <Route exact path='/home' element={<Home/>}/>
+        <Route exact path='/Men' element={< Men/>}/>
+       
+
       </Routes>
 
       <Footer/>

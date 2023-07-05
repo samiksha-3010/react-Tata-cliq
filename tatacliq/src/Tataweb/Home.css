@@ -1,195 +1,151 @@
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-#Home{
-    /* border: 1px solid gray; */
-    width: 100%;
-    background-color: white;
-    margin-top: 100px;
-}
-#maincontainer{
-width: 100%;
-/* border: 1px solid black; */
-}
-#container2{
-    width: 100%;
-    height: 100px;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-#container2>div{
-    width: 8%;
-    /* border: 1px solid red; */
-    height: 100px; 
 
 }
-#container2>div>img{
-    width: 100%;
-    height: 100px;
-}
-#container3{
-    width: 100%;
-    height: 100px;
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
 
-}  
-#container3>div{
-    width: 25%;
-    height: 70px;
-    /* border: 1px solid gray; */
-    margin-top: 20px;
-
-}
-#container3>div>img{
-    width: 100%;
-    height: 70px;
-}
-#container4{
-    width: 100%;
-    /* border: 1px solid red; */
-    margin-top: 60px;
-}
-#container4>img{
-    padding-left: 270px;
-    height: 100px;
-  }
-#image2{
-    width: 100%;
-    /* border: 1px solid gray; */
-    display: flex;
-    margin-top: 60px;
-   
-}
-#image2>div{
-    width: 12%;
-    /* border: 1px solid gray; */
-    margin-left: 60px ;
-    padding-top: 30px;
-   
-}
-#image2>div>img{
-    width: 100%;
-    height: 250px;
-    padding-top: 60px;
+body {
+    margin-top: 6%;
 }
 
-#container5{
+.maincontainer {
+    /* height: 50vh; */
     width: 100%;
-    height: 100px;
-    margin-top: 60px;
-}
-#container5>img{
-  padding-left: 270px;
-  height: 100px;
-}
-#divimg2{
-    width: 100%;
-    /* border: 1px solid gray; */
-    margin-top: 50px;
-    display: flex;
-}
-#divimg2>div{
-    width: 12%;
-    height: 220px;
-    /* border: 1px solid gray; */
-    margin-top: 50px;
-    margin-left: 60px;
-}
-#divimg2>div>img{
-    width: 100%;
-    height: 220px;
-}
-#container6{
-    width: 100%;
-    height: 100px;
+    border: 1px solid black;
     margin-top: 30px;
 }
-#container6>img{
-  padding-left: 270px;
-  margin-top: 60px;
-  width: 70px;
-}
-#divimag3{
+
+.maincontainer>img {
+    height: 100%;
     width: 100%;
-    /* border: 1px solid gray; */
+}
+
+#quick-procducts {
+    height: 20vh;
+    width: 100%;
+    border: 1px solid black;
     display: flex;
-    margin-top: 50px;
-    padding-left: 60px;
+    align-items: center;
 }
-#divimag3>div{
-width: 25%;
-padding-left: 60px;
 
-/* border: 1px solid gray; */
-
+.quick-procducts-align {
+    /* height: 95%; */
+    width: 95%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#divimg3>div>img{
-    height: 220px; 
-    /* width: 15%; */
 
+.quick-procducts-card {
+    height: 70%;
+    width: 9%;
+    border:1px solid black;
 }
-/* #divimg3>div>img:hover{
-    background-color: none;
+
+.quick-procducts-card>img{
+    height:100%;
+    width: 100%;
+}
+/* .quick-procducts-card>img:hover{
+transform: scale(1.05);
+transition: 500ms;
 } */
-
-#container7{
+#bank-banner{
+    height:20vh;
+    width:100%;
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bank-banner-imageHolder{
+    height:50%;
+    width:25%;
+    border:1px solid black;
+}
+.bank-banner-imageHolder>img{
+    height:100%;
+    width:100%;
+}
+.title-image-backgroung {
+    height: 20vh;
     width: 100%;
-    height: 100px;
-    margin-top: 30px;
-    height: 400px;
+    border: 1px solid black;
 }
-#container7>img{
-    padding-left: 270px;
-    margin-top: 30px;
-    width: 70%;
-  }
-  #divimag4{
-  width: 100%;
-  display: flex;
-  margin-top: 50px;
-  padding-left: 60px;
-}
-#divimag4>div{
-    width: 15%;
-    padding-left: 60px;
-    }
-    #divimag4>div>img{
-        width: 100%;
-        height: 220px;
-    }
-      #container8{ 
-        width: 100%;
-        height: 100px;
-        margin-top: 30px;
-        /* height: 400px; */
-    }  
-    #container8>img{
-        padding-left: 270px;
-        height: 100px;
-      }
-      #divimag5{
-        width: 100%;
-        display: flex;
-        /* border: 1px solid black; */
-      }
-      #divimag5>div{
-        height: 250px;
-        width: 25%;
-        border: 1px solid black;
-        /* margin: auto; */
-        margin-top: 50px;
-        margin-left: 100px;
-      }
-      #divimag5>div>img{
-        width: 100%;
-        height: 100%;
-      }
 
+.title-image-backgroung-imageHolder {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+  
+
+
+.title-image-backgroung-imageHolder>img {
+    height: 100%;
+    width: 100%;
+}
+
+.ondemand-products {
+    height: 60vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.ondemand-products-card {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ondemand-products-card-imageHolder {
+    height: 95%;
+    width: 22%;
+    border: 1px solid black;
+}
+
+.ondemand-products-card-imageHolder>img {
+    height: 100%;
+    width: 100%;
+}
+
+.feature-brands{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.feature-Brands{
+    width: 80%;
+    border: 1px solid black;
+   display: flex;
+   flex-wrap: wrap;
+    margin: auto;
+}
+.feature-Brands>div{
+    width: 42%;
+    border: 1px solid black;
+    height: 300px;
+    margin-left: 25px;
+    margin-top: 30px;
+
+}
+.feature-Brands>div:hover{
+    transform: scale(1.05);
+    transition: 500ms;
+}
+.feature-Brands>div>img{
+    width: 100%;
+    border: 1px solid black;
+    height: 300px;
+}
