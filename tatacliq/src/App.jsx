@@ -6,6 +6,7 @@ import Navbar from './Tataweb/Navbar';
 import Footer from './Tataweb/Footer';
 import Home from './Tataweb/Home';
 import Men from './Tataweb/Men';
+import Ceteg from './Tataweb/Ceteg';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
-      
+        <Route exact path='Ceteg' element={<Ceteg/>}/>
         <Route exact path='/home' element={<Home/>}/>
         <Route exact path='/Men' element={< Men/>}/>
        
