@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+ box-sizing: border-box;
+}
+#menswenterwear{
+    width: 100%;
+    border: 1px solid black;
+}
+#winterwear{
+    width: 30%;
+    margin: auto;
+    
+}
+#winterwear>h2{
+    font-size: xx-large;
+}
+#winterwear>p{
+    margin-left: 90px;
+}
+#sort{
+    width: 80%;
+    height: 70px;
+    border: 1px solid black;
+    margin: auto;
+}
+#popular{
+    width: 30%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    display: flex;
+    margin-left: 65%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#popular>p{
+padding-top: 10px;
+padding-left: 20px;
+}
+#popular>i{
+    padding-right: 20px;
+    padding-top: 10px; 
+}
+/* #icon2{
+    width:5%;
+    border: 1px solid black;
+    margin-left: 95%;
+    height: 40px;
+    margin-bottom: 100px;
+} */
+#maincontainer{
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+    height: 400px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+#containertxt{
+    width: 30%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#containerimg{
+    width: 65%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#firstdiv{
+    width: 80%;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 20px;
+}
+#firstdiv:nth-child(2){
+    color: red;
+}
+.seconddiv{
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    border-bottom: 1px solid gray; 
+    /* padding-top: 20px; */
+}
+.mens{
+    border: 1px solid gray;
+    width: 40%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
