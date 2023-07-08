@@ -11,7 +11,7 @@ function MensML() {
   return (
 
 
-    <div id='menswenterwear'>
+    <div id='menswenterwear-only'>
       <div id='winterwear'>
         <h2>Men's winter wear</h2>
         <p>110455 Products</p>
@@ -146,16 +146,10 @@ function MensML() {
               <p>Collar</p>
               <p>+</p>
             </div>
-
-
-
-          </div>
-
-
-
-
-        </div>
+             </div>
+             </div>
         <div id='containerimg'>
+          
           <div onClick={togo}>
             <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg' />
             <h4>pepeJeans</h4>
@@ -163,51 +157,168 @@ function MensML() {
               Colour Block Polo T-Shirt</p>
             <span><b>₹899MRP</b>:₹1799<p>50% Off</p></span>
             <h6>Free shipping</h6>
-            <div id='star'> 3.9
+
+
+            {/* <div id='star'> 3.9
               <i class="fa-regular fa-star"></i>
-              <p> 14Ratings &2Reviews</p>
-            </div>
+              {/* <p> 14Ratings &2Reviews</p> */}
+             
+              {/* </div> */}
+
+              </div> 
+          <div>
+          <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg' />
+            <h4>pepeJeans</h4>
+            <p>Pepe Jeans Green Cotton Regular Fit
+              Colour Block Polo T-Shirt</p>
+            <span><b>₹899MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+            
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000015584449_437Wx649H_202212060012511.jpeg'/>
+
+            <h4> Puma</h4>
+                <p>Puma Black Slim Fit Printed Cotton Crew T-Shirt</p>          
+                    <span><b>₹999MRP</b>:₹1499<p>55% Off</p></span>
+                    <h6>Free shipping</h6>
+
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i10/437Wx649H/MP000000017210419_437Wx649H_202304141358201.jpeg'/>
+            <h4> Puma</h4>
+                <p>Puma Black Slim Fit Printed Cotton Crew T-Shirt</p>          
+                    <span><b>₹999MRP</b>:₹999<p>55% Off</p></span>
+                    <h6>Free shipping</h6>
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000015584449_437Wx649H_202212060012511.jpeg'/>
+           <h4> United Colors of Benetton</h4>
+             <p>United Colors of Benetton Black Skinny Fit Lightly Washed Jeans</p>
+         <span><b>₹1574MRP</b>:₹3499<p>55% Off</p></span>
+                    <h6>Free shipping</h6>
+                      </div>
+          <div>
+          <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg'/>
+           <h4> United Colors of Benetton</h4>
+           <p>United Colors of Benetton Black Skinny Fit Lightly </p>
+           <span><b>₹1574MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000015591393_437Wx649H_202212081003572.jpeg'/>
+          <h4>  Red Chief</h4>
+           <p>Red Chief Blue Slim Fit Lightly Washed Jeans</p>
+             <span><b>₹₹2115MRP</b>:₹4699<p>50% Off</p></span>
+            <h6>Free shipping</h6> </div>
+          <div>
+          <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000015584438_437Wx649H_202212060012001.jpeg'/>
+          <h4>  Red Chief</h4>
+           <p>Red Chief Blue Slim Fit Lightly Washed Jeans</p>
+             <span><b>₹₹2115MRP</b>:₹4699<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016361149_437Wx649H_202302032327011.jpeg'/>
+           <h4> Levi's</h4>
+               <p>Levi's Chilly Green Pure Cotton Slim Fit Checks Shirts</p> 
+               <span><b>₹1567MRP</b>:₹2699<p>50% Off</p></span>
+            <h6>Free shipping</h6>
 
 
           </div>
-
           <div>
-            <img src='' />
+          <img src='https://img.tatacliq.com/images/i11/437Wx649H/MP000000017261620_437Wx649H_202305161201101.jpeg'/>
+           <h4> Levi's</h4>
+               <p>Levi's Chilly Green Pure Cotton Slim Fit Checks Shirts</p> 
+               <span><b>₹1567MRP</b>:₹2699<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+          </div>
+          <div>
+          <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg'/>
+           <h4> Levi's</h4>
+               <p>Levi's Chilly Green Pure Cotton Slim Fit Checks Shirts</p> 
+               <span><b>₹1567MRP</b>:₹2699<p>50% Off</p></span>
+            <h6>Free shipping</h6>
 
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
           <div>
-            <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg' />
-            
-            
+             <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000015584449_437Wx649H_202212060012511.jpeg'/>
+           <h4> Levi's</h4>
+               <p>Levi's Chilly Green Pure Cotton Slim Fit Checks Shirts</p> 
+               <span><b>₹1567MRP</b>:₹2699<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016362070_437Wx649H_202302040017141.jpeg'/>
+           <h4> United Colors of Benetton</h4>
+           <p>United Colors of Benetton Black Skinny Fit Lightly </p>
+           <span><b>₹1574MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg'/>
+          <h4> U.S. Polo Assn.</h4>
+               <p>U.S. Polo Assn. Ivory Cotton Regular Fit Polo T-Shirt</p>
+            <span><b>₹1899MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+          </div>
+          <div>
+            <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000015584449_437Wx649H_202212060012511.jpeg'/>
+           <h4> U.S. Polo Assn.</h4>
+               <p>U.S. Polo Assn. Ivory Cotton Regular Fit Polo T-Shirt</p>
+            <span><b>₹1899MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+
+          </div>
+          <div>
+          <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg' />
+            <h4>pepeJeans</h4>
+            <p>Pepe Jeans Green Cotton Regular Fit
+              Colour Block Polo T-Shirt</p>
+            <span><b>₹899MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+          </div>
+          <div>
+          <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016179430_437Wx649H_202301221935461.jpeg'/>
+           <h4> United Colors of Benetton</h4>
+             <p>United Colors of Benetton Black Skinny Fit Lightly Washed Jeans</p>
+         <span><b>₹1574MRP</b>:₹3499<p>55% Off</p></span>
+                    <h6>Free shipping</h6>
+          </div>
+          <div>
+          <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000015584449_437Wx649H_202212060012511.jpeg'/>
+           <h4> United Colors of Benetton</h4>
+             <p>United Colors of Benetton Black Skinny Fit Lightly Washed Jeans</p>
+         <span><b>₹1574MRP</b>:₹3499<p>55% Off</p></span>
+                    <h6>Free shipping</h6>
+          </div>
+          <div>
+
+          <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg' />
+            <h4>pepeJeans</h4>
+            <p>Pepe Jeans Green Cotton Regular Fit
+              Colour Block Polo T-Shirt</p>
+            <span><b>₹899MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
+          </div>
+          <div>
+          <img src='https://img.tatacliq.com/images/i9/437Wx649H/MP000000016236811_437Wx649H_202301261320511.jpeg' />
+            <h4>pepeJeans</h4>
+            <p>Pepe Jeans Green Cotton Regular Fit
+              Colour Block Polo T-Shirt</p>
+            <span><b>₹899MRP</b>:₹1799<p>50% Off</p></span>
+            <h6>Free shipping</h6>
           </div>
 
 
         </div>
+         </div>
 
-
-
-
-
-      </div>
-
-    </div>
+     </div> 
+   
+     
 
 
 

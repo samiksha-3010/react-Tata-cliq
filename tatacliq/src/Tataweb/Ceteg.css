@@ -3,7 +3,7 @@
     padding: 0;
  box-sizing: border-box;
 }
-#menswenterwear{
+#menswenterwear-only{
     width: 100%;
     border: 1px solid black;
 }
@@ -178,7 +178,6 @@ padding-left: 20px;
     border: 1px solid gray;
     height: 400px;
     align-items: center;
-    /* margin-top: 40px; */
     margin-bottom: 5%;
 }
 #containerimg>div:hover{
@@ -196,25 +195,31 @@ height: 230px;
 
 #containerimg>div>h6{
     color: red;
+    padding-left: 20px;
+}
+#containerimg>div>h4{
+    padding-left: 20px;
 }
 #containerimg>div>span>p{
     color: blue;
+    padding-left: 20px;
+
 }
 #containerimg>div>p{
     color: gray;
     font-size: 13px;
+    padding-left: 20px;
 }
-/* .star{
-    width: 100%;
-    border: 1px solid red;
-    height: 10%;
-    display: flex;
-} */
-#star{
+#containerimg>div>span>b{
+    padding-left: 20px;
+}
+
+/* #star{
     width: 25%;
     border: 1px solid gray;
     height: 6%;
     border-radius: 70px;
+    margin-left: 20px;
 }
 #star>i{
     color: blue;
@@ -223,5 +228,5 @@ height: 230px;
     padding-left: 90px;
    font-size: small;
    color: red;
-}
+} */
 
