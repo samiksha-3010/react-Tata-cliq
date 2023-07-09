@@ -9,13 +9,15 @@ import Men from './Tataweb/Men';
 import Ceteg from './Tataweb/Ceteg';
 import MensMl from './Tataweb/MensML';
 import SingleProduct from'./Tataweb/SingleProduct';
+import Profile from './Tataweb/Profile';
 
 function App() {
 
   return (
     <div>
       <Navbar/>
-      <Routes>
+      <Routes>ref
+        <Route exact path='Profile' element={<Profile/>}/>
         <Route exact path='SingleProduct'element={<SingleProduct/>}/>
         <Route exact path='MensMl' element={<MensMl/>}/>
         <Route exact path='Ceteg' element={<Ceteg/>}/>

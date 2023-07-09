@@ -109,19 +109,67 @@ function SingleProduct() {
                                     </div>
 
                                   </div>
-                                  <div id='icon-image'>
+                                  <div id='icon-image1'>
+                                    <div id='icon-image'>
+
                                     
                                     <i class="fa-solid fa-truck fa-2xl" ></i>
                                     <p>Delivery by <b>14th Jul</b></p>
-
-                                    
-                                    {/* <div></div> */}
                                   </div>
-            </div>
-        </div>
+                                  <div id='icon-imagecash'>
+                                  <i class="fa-solid fa-sack-dollar fa-2xl"></i>
+                                    <p>Cash on Delivery <b>| Available</b></p>
+                                    </div>
+                                    </div>
+                                   </div>
+                                    </div>
+                                    </div>
+                                  <div id='more-puma'>
+                                    <h2>More From Puma</h2>
+                                    <div id='fallow'> + Fallow Brand</div>
 
 
-    </div>
+                                  </div>
+                                  <div id='imagediv'>
+                                    <div>
+                                  <img src='https://img.tatacliq.com/images/i10/437Wx649H/MP000000017210419_437Wx649H_202304141358303.jpeg'/>
+                                  <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i11/437Wx649H/MP000000018112402_437Wx649H_202306252337291.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i11/437Wx649H/MP000000018077788_437Wx649H_202306230403041.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i11/437Wx649H/MP000000018077788_437Wx649H_202306230403083.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    <div>
+                                    <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000015181541_437Wx649H_202211051605021.jpeg'/>
+
+                                    <p>Monte Carlo Black Regular Fit Self Design Cardigan
+                                      ₹2789
+                                     ₹3985(30% off)</p>
+                                    </div>
+                                    
+                                  </div>
+
+  
+
     </>
   )
 }
