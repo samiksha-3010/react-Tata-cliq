@@ -8,17 +8,17 @@
      background-color: #ececec;
 }
 #profile-page{
-    width: 60%;
+    width: 92%;
     height: 800px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-around;
 }
 #left-page{
-    width: 30%;
-    border: 1px solid gray;
+    width: 20%;
+    /* border: 1px solid gray; */
     margin-top: 30px;
     background-color: #ffffff;
 }
@@ -38,7 +38,7 @@
 .wishlest-icon{
     width: 100%;
     height: 50px; 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     margin-top: 8px;
     
@@ -59,7 +59,7 @@
 .setting{
     width: 100%;
     height: 50px; 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     margin-top: 8px;   
 }
@@ -76,10 +76,11 @@
                             /* start right section */
 
 #right-page{
-    width: 65%;
-    border: 1px solid gray;
+    width: 45%;
+    /* border: 1px solid gray; */
     margin-top: 30px;
     background-color: #ffffff;
+    /* border-radius: 15px; */
 }
 #information{
     width: 100%;
@@ -94,12 +95,13 @@
     padding-bottom: 25px; 
 }
 .besic-deatl{
-   border: 1px solid red;
+   /* border: 1px solid red; */
    width: 90%;
    height: 50px;
    margin: auto;
    display: flex;
    justify-content: space-between;
+   margin-top: 20px;
    
 }
 .besic-deatl>p{
@@ -108,9 +110,59 @@
 .detalis{
     border: 1px solid black;
     width: 90%;
-    height: 50px;
+    /* height: 50px; */
     margin: auto;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-radius: 10px;
+   
 
+}
+.name-details{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 50px; 
+    display: flex;
+    justify-content: space-around; 
+    margin: auto;
+    border-radius: 10px;
+}
+.first-name{
+    width: 25%;
+    height: 30px;
+    margin-top: 10px;
+   
+    
+}
+.second-name{
+    width: 75%;
+    height: 30px;
+   border: 1px solid gray;
+   border-radius: 5px;
+   margin-top: 10px;
+}
+.second-name>p{
+    padding-left: 10px;
+}
+
+#last-page{
+    width: 25%;
+    margin-top: 30px;
+    background-color: #ffffff;
+    height: 200px;
+}
+   #cercle  {
+    width: 20%;
+    height: 60px;
+     margin-top: 50px;
+     margin-left: 90px;
+     border-radius: 100px;
+     background-color: #ececec ;
+
+  
+}
+#cercle >p{
+    padding-top: 70px;
+    color: gray;
+
+   
 }

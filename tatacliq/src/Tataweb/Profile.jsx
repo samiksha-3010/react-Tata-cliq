@@ -64,9 +64,70 @@
                 <p>Add</p> 
                 </div>
                 <div className='detalis'>
+                  <div className='name-details'>
 
+                  <div className='first-name'><p>First Name</p></div>
+                  <div className='second-name'><p>First Name</p></div> 
+                
+                  </div>
+                  <div className='name-details'>
+
+                   <div className='first-name'><p>First Name</p></div>
+                    <div className='second-name'><p>First Name</p></div> 
+
+                      </div>
+                      <div className='name-details'>
+
+                        <div className='first-name'><p>First Name</p></div>
+                           <div className='second-name'><p>First Name</p></div> 
+
+                             </div>
+                              </div>
+                              <div className='besic-deatl'>
+                <b>Contact Details</b>
+                <p>Edit</p> 
                 </div>
-          </div>
+                <div className='detalis'>
+                  <div className='name-details'>
+
+                  <div className='first-name'><p>First Name</p></div>
+                  <div className='second-name'><p>First Name</p></div> 
+                
+                  </div>
+                  <div className='name-details'>
+
+                   <div className='first-name'><p>First Name</p></div>
+                    <div className='second-name'><p>First Name</p></div> 
+
+                      </div>
+                     
+                              </div>
+
+                              <div className='besic-deatl'>
+                <b>Personal Details</b>
+                <p>Edit</p> 
+                </div>
+                <div className='detalis'>
+                  <div className='name-details'>
+
+                  <div className='first-name'><p>Gender</p></div>
+                  <div className='second-name'></div> 
+                
+                  </div>
+                  
+                     
+                              </div>
+                              
+                              
+                               </div>
+                              <div id='last-page'>
+                              <div id='cercle'>
+                                <p>samiksha30102@gmail.com</p>
+
+
+                              </div>
+
+                              </div>
         </div>
         </div>
      </>
