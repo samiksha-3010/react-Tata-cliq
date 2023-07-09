@@ -24,7 +24,7 @@
 }
 #leftimage>div{
     width: 40%;
-    height: 330px;
+    /* height: 330px; */
     border: 1px solid black;
     margin-top: 30px;
 }
@@ -46,7 +46,7 @@
     width: 90%;
     border: 1px solid gray;
     margin: auto;
-    height: 800px;
+    /* height: 800px; */
 }
 #wishlest{
     width: 30%;
@@ -149,19 +149,75 @@
     padding-left: 20px;
     padding-top: 20px;
 }
-.offersimage{
+#offersimage{
     width: 90%;
-    height: 90px;
+    /* height: 90px; */
     margin-left: 30px;
     margin-top: 30px;
     border: 1px solid red;
-    display: flex;
-    
+     display: flex;
+    justify-content: space-between;    
 }
-.offersimage{
-    width: 14%;
+#offersimage2{
+    width: 10%;
+    border: 1px solid red;
+   
+} 
+
+#offersimage>img{
+    padding-top: 30px;
+    padding-left: 40px;    
+} 
+#offfersimage2-text{
+    width: 90%;
+    border: 1px solid red;
+    font-size: 15px;
+}
+#offfersimage2-text>span{
+    color: gray;
+}
+#offfersimage2-text>span>b{
+    color: blue;
+    padding-left: 10px;
+}
+#more-offer{
+    width: 80%;
+    border-bottom:  1px solid gray;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#ship-to{
+    width: 80%;
+    border-bottom:  1px solid gray;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#pin-code{
+    width: 80%;
+    border:  1px solid gray;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
     height: 40px;
 }
+#pin-code>p{
+    padding-top: 10px;
+} 
+                                        /* claas icon */
+#icon-image{
+    width: 80%;
+    border-bottom:  1px solid gray;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+}
+#icon-image>p{
+    padding-left: 20px;
+    padding-bottom:10px ;
+}
+
 
 
 

@@ -52,17 +52,71 @@ function SingleProduct() {
                      </div>
                         <div id='avalible-offer'>
                             <h4>Available Offers</h4>
-                            <div className='offersimage'>
-                                <div className='offersimage2'>
+                            <div id='offersimage'>
+                                <div id='offersimage2'>
                                     <img src='https://assets.tatacliq.com/medias/sys_master/images/27678831411230.png'/>
+                                    </div>
+                                     
+                                     <div id='offfersimage2-text'>
+                                     <p>10% Instant Discount on Kotak Bank Credit Cards only.</p>
+                                     <span>Min Purchase: ₹2500Max Discount: ₹1000<b>more</b></span>
+                                     </div>
+                                   </div>
+
+                            <div id='offersimage'>
+                                <div id='offersimage2'>
+                                    <img src='https://assets.tatacliq.com/medias/sys_master/images/27678831280158.png'/>
+                                    </div>
+                                     
+                                     <div id='offfersimage2-text'>
+                                     <p>15% Instant Discount on Kotak Bank Credit Cards only.</p>
+                                     <span>Min Purchase: ₹2500Max Discount: ₹1000<b>more</b></span>
+                                     </div>
+                                   </div>
+
+                                   <div id='offersimage'>
+                                <div id='offersimage2'>
+                                    <img src='https://assets.tatacliq.com/medias/sys_master/images/27678831280158.png'/>
+                                    </div>
+                                     
+                                     <div id='offfersimage2-text'>
+                                     <p>15%off on ICICI Credit Cards.</p>
+                                     <span>Use Code: ICICIWEEKEND Min Purchase: ₹150<b>more</b></span>
+                                     </div>
+                                   </div>
+
+                                   <div id='offersimage'>
+                                <div id='offersimage2'>
+                                    <img src='https://www.tatacliq.com/src/pdp/components/img/userOfferIcon.svg'/>
+                                    </div>
+                                     
+                                     <div id='offfersimage2-text'>
+                                     <p>Use Code CLIQ500 get 10% off on min. Purchase of Rs.2500 | Max discount</p>
+                                     <span>Use Code: ICICINB|2000<b>more</b></span>
+                                     </div>
+                                     </div>
+                                  </div>
+
+                                  <div id='more-offer'>
+                                  <p>See 5 More Offers</p>
+                                  </div>
+                                  <div id='ship-to'>
+                                    <h4>Ship-To</h4>
+                                    <div id='pin-code'>
+                                        <p>Delhi, 110001</p>
+                                        <p>Change Pincode</p>
+
+                                    </div>
+
+                                  </div>
+                                  <div id='icon-image'>
                                     
-                                </div>
-                                  
+                                    <i class="fa-solid fa-truck fa-2xl" ></i>
+                                    <p>Delivery by <b>14th Jul</b></p>
 
-                            </div>
-
-                        </div>
-
+                                    
+                                    {/* <div></div> */}
+                                  </div>
             </div>
         </div>
 
