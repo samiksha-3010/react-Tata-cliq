@@ -1,6 +1,11 @@
 import React from 'react'
 import './Home.css'
-const Home = () => {
+import { useNavigate } from 'react-router-dom'
+function Home  ()  {
+  const router = useNavigate()
+  function togo(){
+    router('/MenMl')
+  }
   return (
 
     <>
@@ -10,8 +15,8 @@ const Home = () => {
 
       <div id='quick-procducts'>
         <div className='quick-procducts-align'>
-          <div className='quick-procducts-card'>
-            <img src='https://assets.tatacliq.com/medias/sys_master/images/47596848218142.jpg' />
+          <div  onClick={togo}  className='quick-procducts-card'>
+            <img src='https://assets.tatacliq.com/medias/sys_master/images/47396042702878.jpg' />
           </div>
           <div className='quick-procducts-card'>
             <img src='https://assets.tatacliq.com/medias/sys_master/images/47575793303582.jpg' />

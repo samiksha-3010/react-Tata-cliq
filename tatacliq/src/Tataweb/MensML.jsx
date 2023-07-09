@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 function MensML() {
   const router = useNavigate()
   function togo() {
-    router('/home')
+    router('/SingleProduct')
   }
   return (
 

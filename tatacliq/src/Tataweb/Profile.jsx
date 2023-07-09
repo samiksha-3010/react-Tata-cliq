@@ -10,7 +10,7 @@
           <div id='menu'><p>Menu</p></div>
             <div id='icon-image'>
                  </div>
-                 <div className='wishlest-icon'>
+                 <div  className='wishlest-icon'>
                   <img src='https://www.tatacliq.com/src/general/components/img/WL5.svg' />
                   <span>My Wishlist</span>
                    </div>

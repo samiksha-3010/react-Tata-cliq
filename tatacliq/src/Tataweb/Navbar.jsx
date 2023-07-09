@@ -1,8 +1,17 @@
 import React from 'react'
 import './Nabvar.css'
-const Navbar = () => {
+import { useNavigate } from 'react-router-dom'
+
+function Navbar  ()  {
+    const router = useNavigate()
+    function togo(){
+        router('/Profile')
+    }
+
+
   return (
     <>
+
     <div id='navbar'>
     <div id='divfirst'>
         <img src='https://coupontrends.in/img/1477323360_tatacliq.png'/>
@@ -16,7 +25,7 @@ const Navbar = () => {
                 <p>Gift Card</p>
                 <p>Cliq Care </p>
                 <p>Track Order</p>
-               <p>SignIn/SighUp</p>               
+               <p onClick={togo}>SignIn/SighUp</p>               
 
           
 
