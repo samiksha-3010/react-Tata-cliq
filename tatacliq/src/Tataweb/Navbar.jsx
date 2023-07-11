@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 function Navbar  ()  {
     const router = useNavigate()
     function togo(){
-        router('/Profile')
+        router('/Profile/')
     }
 
 
@@ -47,7 +47,7 @@ function Navbar  ()  {
                 </div>
             </div>
             <div id='bag'>
-            <i class="fa-regular fa-heart"></i>
+            <i   class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-bag-shopping"></i>
             </div>
         </div>

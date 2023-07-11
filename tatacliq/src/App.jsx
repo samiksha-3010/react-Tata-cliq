@@ -10,13 +10,17 @@ import Ceteg from './Tataweb/Ceteg';
 import MensMl from './Tataweb/MensML';
 import SingleProduct from'./Tataweb/SingleProduct';
 import Profile from './Tataweb/Profile';
+import CartPage from './Tataweb/CartPage'
+
+
 
 function App() {
 
   return (
     <div>
       <Navbar/>
-      <Routes>ref
+    <Routes>
+        <Route exact path='CartPage' element={<CartPage/>}/>
         <Route exact path='Profile' element={<Profile/>}/>
         <Route exact path='SingleProduct'element={<SingleProduct/>}/>
         <Route exact path='MensMl' element={<MensMl/>}/>
@@ -24,7 +28,7 @@ function App() {
         <Route exact path='/home' element={<Home/>}/>
         <Route exact path='/Men' element={< Men/>}/>
        
-
+        
       </Routes>
 
       <Footer/>
