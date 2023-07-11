@@ -11,6 +11,7 @@ import MensMl from './Tataweb/MensML';
 import SingleProduct from'./Tataweb/SingleProduct';
 import Profile from './Tataweb/Profile';
 import CartPage from './Tataweb/CartPage'
+import Women from './Tataweb/Women';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route exact path='Ceteg' element={<Ceteg/>}/>
         <Route exact path='/home' element={<Home/>}/>
         <Route exact path='/Men' element={< Men/>}/>
+        <Route exact path='/women' element={<Women/>}/>
        
         
       </Routes>
