@@ -10,8 +10,14 @@ import Ceteg from './Tataweb/Ceteg';
 import MensMl from './Tataweb/MensML';
 import SingleProduct from'./Tataweb/SingleProduct';
 import Profile from './Tataweb/Profile';
-import CartPage from './Tataweb/CartPage'
+import CartPage from './Tataweb/CartPage';
 import Women from './Tataweb/Women';
+import Kids from './Tataweb/Kids';
+import Kitchen from'./Tataweb/Kitchen'
+import Gaudget from'./Tataweb/Gaudget';
+import Beauty from'./Tataweb/Beauty'
+
+
 
 
 
@@ -29,6 +35,10 @@ function App() {
         <Route exact path='/home' element={<Home/>}/>
         <Route exact path='/Men' element={< Men/>}/>
         <Route exact path='/women' element={<Women/>}/>
+        <Route exact path='kids' element={<Kids/>}/>
+        <Route exact path='Kitchen' element={<Kitchen/>}/>
+        <Route exact path='gaudget'element={<Gaudget/>}/>
+        <Route exact path='Beauty'element={<Beauty/>}/>
        
         
       </Routes>
