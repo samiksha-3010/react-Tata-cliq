@@ -3,8 +3,11 @@ import './Home.css'
 import { useNavigate } from 'react-router-dom'
 function Home  ()  {
   const router = useNavigate()
-  function togo(){
+  function  MenMl(){
     router('/MenMl')
+  }
+  function MensMl(){
+    router ('/MensMl')
   }
   return (
 
@@ -15,11 +18,11 @@ function Home  ()  {
 
       <div id='quick-procducts'>
         <div className='quick-procducts-align'>
-          <div  onClick={togo}  className='quick-procducts-card'>
+          <div  onClick={MenMl}  className='quick-procducts-card'>
             <img src='https://assets.tatacliq.com/medias/sys_master/images/47396042702878.jpg' />
           </div>
-          <div className='quick-procducts-card'>
-            <img src='https://assets.tatacliq.com/medias/sys_master/images/47575793303582.jpg' />
+          <div onClick={MensMl} className='quick-procducts-card'>
+            <img src='https://assets.tatacliq.com/medias/sys_master/images/47396042702878.jpg' />
           </div>
           <div className='quick-procducts-card'>
             <img src='https://assets.tatacliq.com/medias/sys_master/images/47445466349598.jpg' />

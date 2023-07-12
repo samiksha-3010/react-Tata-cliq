@@ -15,7 +15,10 @@ import Women from './Tataweb/Women';
 import Kids from './Tataweb/Kids';
 import Kitchen from'./Tataweb/Kitchen'
 import Gaudget from'./Tataweb/Gaudget';
-import Beauty from'./Tataweb/Beauty'
+import Beauty from'./Tataweb/Beauty';
+import Jewellery from './Tataweb/Jewellery';
+import Accessories from'./Tataweb/Accessories';
+
 
 
 
@@ -39,6 +42,8 @@ function App() {
         <Route exact path='Kitchen' element={<Kitchen/>}/>
         <Route exact path='gaudget'element={<Gaudget/>}/>
         <Route exact path='Beauty'element={<Beauty/>}/>
+        <Route exact path='Jewellery'element={< Jewellery/>}/>
+        <Route exact path='Accessories'element={<Accessories/>}/>
        
         
       </Routes>
