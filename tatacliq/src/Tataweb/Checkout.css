@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+#screen{
+    width: 100%;
+    background-color:#ececec ; 
+}
+#checout{
+    width: 70%;
+    margin: auto;
+    margin: 50px;
+}
+#checout>h2{
+    font-size: 30px;
+    padding-left: 40px;
+}
+#check-out{
+    width: 90%;
+    margin:auto ;
+    height: 500px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+}
+#right-section{
+    width: 65%;
+    border: 1px solid black;
+    background-color: white;
+}
+#shoping{
+    width: 90%;
+    border: 1px solid black;
+    height: 70px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   
+}
+#first-div{
+    width: 60%;
+    height: 70px;
+    border: 1px solid black;
+}
+#first-div>span{
+    width: 15%;
+    height: 40px;
+    border: 1px solid black;
+ border-radius: 100px;
+ margin-left: 60px;
+ margin-top: 30px;
+}
+#data-fill{
+    width: 90%;
+    margin: auto;
+    border: 1px solid red;
+    display: flex;
+  
+}
+.data-div-right{
+width: 50%;
+border: 1px solid black;
+margin: auto;
+justify-content: space-around;
+ height: 400px;
+}
+
+.data-div-left{
+    width: 50%;
+    border: 1px solid black;
+    margin: auto;
+    justify-content: space-around;
+    height: 400px;
+  display: flex;
+    }
+    .require{
+        width: 90%;
+        height: 50px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+  .require>p{
+    padding-top: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#left-section{
+    width: 20%;
+    border: 1px solid black;
+    background-color: white;
+    
+
+}

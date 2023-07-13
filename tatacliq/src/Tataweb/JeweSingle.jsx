@@ -1,18 +1,18 @@
 import React from 'react'
-import'./SingleProduct.css'
+import'./JeweSingle.css'
 
-function AsseSingle () {
+function JeweSingle () {
   return (
     <>
     <div id='singleproduct'>
         <div id='leftimage'>
             
             <div>
-                <img src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527416.jpeg'/></div>
-            <div> <img src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527395.jpeg'/></div>
-            <div> <img src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527457.jpeg'/></div>
-            <div> <img src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527363.jpeg'/></div>
-            <div> <img src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527363.jpeg'/></div>
+                <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000017068566_97Wx144H_202304271920561.jpeg'/></div>
+            <div> <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000017068566_97Wx144H_202304271920333.jpeg'/></div>
+            <div> <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000017068566_97Wx144H_202304271920514.jpeg'/></div>
+            <div> <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000017068566_97Wx144H_202304271920514.jpeg'/></div>
+            <div> <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000017068566_97Wx144H_202304271920422.jpeg'/></div>
             </div>
         <div id='righttext'>
             <div id='maindiv'>
@@ -22,7 +22,7 @@ function AsseSingle () {
                 <p>Popular: Recently wishlisted 82 times</p>
                 </div>
                 <div id='wishtext'>
-                <h2>Puma</h2>
+                <h2>Taunisq</h2>
                 <p>puma Black Slim Fit Printed Cotton Crew T-Shirt</p>
                    <span>₹799MRP:<b>₹1599</b> <p>53% Off</p>Inclusive of all taxes</span>
                    <h4>Use MENSEOSS coupon to get 10% off on cart value 1999/- and above.</h4>
@@ -132,34 +132,34 @@ function AsseSingle () {
                                   </div>
                                   <div id='imagediv'>
                                     <div>
-                                  <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000016740354_97Wx144H_202303031525471.jpeg'/>
+                                  <img src='https://img.tatacliq.com/images/i7/97Wx144H/MP000000009494526_97Wx144H_202105042219391.jpeg'/>
                                   <p>Monte Carlo Black Regular Fit Self Design Cardigan
                                       ₹2789
                                      ₹3985(30% off)</p>
                                     </div>
                                     <div>
-                                    <img src='https://img.tatacliq.com/images/i8/437Wx649H/MP000000008861878_437Wx649H_202211300437521.jpeg'/>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000013765836_97Wx144H_202207130826031.jpeg'/>
 
                                     <p>Monte Carlo Black Regular Fit Self Design Cardigan
                                       ₹2789
                                      ₹3985(30% off)</p>
                                     </div>
                                     <div>
-                                    <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000016740429_97Wx144H_202303031533521.jpeg'/>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000012047259_97Wx144H_202202070409221.jpeg'/>
 
                                     <p>Monte Carlo Black Regular Fit Self Design Cardigan
                                       ₹2789
                                      ₹3985(30% off)</p>
                                     </div>
                                     <div>
-                                    <img src='https://img.tatacliq.com/images/i5/97Wx144H/MP000000005764307_97Wx144H_20191027023739.jpeg'/>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000014807504_97Wx144H_202210092344481.jpeg'/>
 
                                     <p>Monte Carlo Black Regular Fit Self Design Cardigan
                                       ₹2789
                                      ₹3985(30% off)</p>
                                     </div>
                                     <div>
-                                    <img src='https://img.tatacliq.com/images/i3/97Wx144H/MP000000004632497_97Wx144H_20190410060433.jpeg'/>
+                                    <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000014807582_97Wx144H_202210092346511.jpeg'/>
 
                                     <p>Monte Carlo Black Regular Fit Self Design Cardigan
                                       ₹2789
@@ -174,4 +174,4 @@ function AsseSingle () {
   )
 }
 
-export default AsseSingle 
+export default JeweSingle

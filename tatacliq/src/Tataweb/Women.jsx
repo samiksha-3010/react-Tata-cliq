@@ -1,7 +1,15 @@
 import React from 'react'
 // import './Women.css'
 
+import { useNavigate } from 'react-router-dom'
+
+
 const Women = () => {
+
+    const router = useNavigate()
+    function WomenSingle (){
+      router('/WomenSingle')
+    }
   return (
 <>
 <div className='mensection'>
@@ -9,11 +17,11 @@ const Women = () => {
 </div>
 <div id='divfirstimage'>
     <div id='divchild'>
-        <div>
-            <img src='https://assets.tatacliq.com/medias/sys_master/images/47396042702878.jpg'/>
+        <div onClick={WomenSingle}>
+            <img  src='https://assets.tatacliq.com/medias/sys_master/images/47396042702878.jpg'/>
         </div>
         <div>
-        <img src='https://assets.tatacliq.com/medias/sys_master/images/47396042768414.jpg'/>
+        <img  src='https://assets.tatacliq.com/medias/sys_master/images/47396042768414.jpg'/>
         </div>
         <div>
         <img src='https://assets.tatacliq.com/medias/sys_master/images/47396042833950.jpg'/>

@@ -19,18 +19,9 @@ import Beauty from'./Tataweb/Beauty';
 import Jewellery from './Tataweb/Jewellery';
 import Accessories from'./Tataweb/Accessories';
 import AsseSingle from'./Tataweb/AsseSingle';
-
-
-
-
-
-
-
-
-
-
-
-
+import JeweSingle from './Tataweb/JeweSingle';
+import WomenSingle from './Tataweb/WomenSingle';
+import Checkout from './Tataweb/Checkout'
 
 function App() {
 
@@ -55,6 +46,9 @@ function App() {
         <Route exact path='Jewellery'element={< Jewellery/>}/>
         <Route exact path='Accessories'element={<Accessories/>}/>
         <Route exact path='AsseSingle' element={<AsseSingle/>}/>
+        <Route exact path='JeweSingle'element={<JeweSingle/>}/>
+        <Route exact path='WomenSingl' element={<WomenSingle/>}/>
+        <Route exact path='Checkout' element={<Checkout/>}/>
         
         
       

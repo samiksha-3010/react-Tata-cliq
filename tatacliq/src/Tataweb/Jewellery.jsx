@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom'
 
 function Jewellery() {
   const router = useNavigate()
-  function togo() {
-    router('/SingleProduct')
+  function JeweSingle() {
+    router('/JeweSingle')
   }
   return (
 
@@ -142,7 +142,7 @@ function Jewellery() {
              </div>
         <div id='containerimg'>
           
-          <div onClick={togo}>
+          <div onClick={JeweSingle}>
             <img src='https://img.tatacliq.com/images/i4/252Wx374H/MP000000006737174_252Wx374H_20200319165425.jpeg' />
             <h4>Joyalukkas</h4>
             <p>Joyalukkas 22k Gold Earrings for Women

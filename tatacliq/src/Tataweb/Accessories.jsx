@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom'
 
 function Accessories() {
   const router = useNavigate()
-  function togo() {
-    router('/SingleProduct')
+  function AsseSingle () {
+    router('/AsseSingle ')
   }
   return (
 
@@ -136,7 +136,7 @@ function Accessories() {
              </div>
         <div id='containerimg'>
           
-          <div onClick={togo}>
+          <div>
             <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000014016063_97Wx144H_202208022321121.jpeg' />
             <h4>Joyalukkas</h4>
             <p>Joyalukkas 22k Gold Earrings for Women
@@ -171,7 +171,7 @@ function Accessories() {
 
           </div>
           <div>
-            <img src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527421.jpeg'/>
+            <img  onClick={AsseSingle} src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527421.jpeg'/>
             <h4>Tanishq </h4>
                 <p>Mia by Tanishq 18k Gold Stars Earrings for</p>          
                     <span><b>₹999MRP</b>:₹999<p>55% Off</p></span>
