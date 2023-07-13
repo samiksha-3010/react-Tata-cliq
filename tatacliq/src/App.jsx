@@ -18,6 +18,14 @@ import Gaudget from'./Tataweb/Gaudget';
 import Beauty from'./Tataweb/Beauty';
 import Jewellery from './Tataweb/Jewellery';
 import Accessories from'./Tataweb/Accessories';
+import AsseSingle from'./Tataweb/AsseSingle';
+
+
+
+
+
+
+
 
 
 
@@ -30,6 +38,8 @@ function App() {
     <div>
       <Navbar/>
     <Routes>
+      
+   
         <Route exact path='CartPage' element={<CartPage/>}/>
         <Route exact path='Profile' element={<Profile/>}/>
         <Route exact path='SingleProduct'element={<SingleProduct/>}/>
@@ -44,6 +54,11 @@ function App() {
         <Route exact path='Beauty'element={<Beauty/>}/>
         <Route exact path='Jewellery'element={< Jewellery/>}/>
         <Route exact path='Accessories'element={<Accessories/>}/>
+        <Route exact path='AsseSingle' element={<AsseSingle/>}/>
+        
+        
+      
+    
        
         
       </Routes>
