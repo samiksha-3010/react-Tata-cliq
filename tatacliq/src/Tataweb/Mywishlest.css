@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+#my-wishlist{
+    width: 100%;
+    height: 70px;;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    margin-top: 100px;
+    border: 1px solid black;
+    background-color:#ffffff ;
+
+}
+#my-wishlist>h2{
+ font-size: 25px;
+ padding-left: 100px;
+}
+#wish-image{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+  
+}
+#wish-image>div{
+    width: 20%;
+    height: 300px;
+}
+#wish-image>div>img{
+    width: 100%;
+    height: 300px;
+}
+.image-txt{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.div-first{
+    width: 20%;
+    height: 300px;
+
+}
+.add-bag{
+    width: 90%;
+    height: 40px;
+    background-color:rgb(174, 7, 35) ;
+    margin: auto;
+    color: white;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.div-first>p{
+    padding-left: 40px;
+    font-size: 14px;
+    padding-top: 10px;
+    color: black;
+}
+.div-first>span{
+    padding-left: 40px;
+    font-size: 14px;
+    color: gray;
+}
+.div-first>b{
+    padding-left: 40px;
+    font-size: 14px;
+  
+}
+.div-first>b>p{
+    padding-left: 40px;
+    font-size: 14px;
+    color: red;
+}
+.div-first>h6{
+    padding-left: 40px;
+    font-size: 14px;
+    color: red;
+}
+
+
+

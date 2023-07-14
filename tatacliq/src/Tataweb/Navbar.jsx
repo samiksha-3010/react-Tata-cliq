@@ -50,6 +50,9 @@ const Navbar = () => {
     function Accessories(){
         router('/Accessories')
     }
+    function Mywishlest(){
+        router ('/Mywishlest')
+    }
 
 
     return (
@@ -137,12 +140,14 @@ const Navbar = () => {
                                 <input type='search' placeholder='search for cetegreis' />
                             </div>
                         </div>
-                        <div id='bag' onClick={CartPage}>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-bag-shopping"></i>
+                        <div className='bag-cart '>
+                        <div id='bag'onClick={CartPage} >
+                            {/* <i class="fa-regular fa-heart"></i> */}
+                            <i class="fa-solid fa-bag-shopping"></i> </div>
+                            <div onClick={Mywishlest} id='wish'> <i class="fa-regular fa-heart"></i></div>
                         </div>
-
-
+                       
+                        
 
                     </div>
 
