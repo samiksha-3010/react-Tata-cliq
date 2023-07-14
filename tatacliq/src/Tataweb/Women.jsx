@@ -4,7 +4,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-const Women = () => {
+function Women () {
 
     const router = useNavigate()
     function WomenSingle (){
