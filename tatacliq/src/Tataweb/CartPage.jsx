@@ -1,7 +1,14 @@
 import React from 'react'
 import'./CartPage.css'
+import { useNavigate } from 'react-router-dom'
+
 
 function CartPage() {
+    const router = useNavigate ()
+    function Checkout(){
+        router('/Checkout')
+
+    }
   return (
     <div id='screen'>
  
@@ -122,9 +129,9 @@ function CartPage() {
                                    
 
                                     </div>
-                                    <div id='checkout'>
+                                    <div onClick={Checkout} id='checkout'>
                                         <div id='price'><p>Total₹ 1912</p></div>
-                                        <div id='button'><p>Checkout</p></div>
+                                        <div  id='button'><p>Checkout</p></div>
                                     </div>
                                     <div id='good-itemcs'>
                                     <i class="fa-regular fa-heart fa-xl"></i>
