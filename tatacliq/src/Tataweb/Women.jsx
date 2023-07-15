@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 
 function Women () {
 
-    const router = useNavigate()
+    const router = useNavigate();
     function WomenSingle (){
       router('/WomenSingle')
     }

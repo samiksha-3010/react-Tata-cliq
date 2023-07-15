@@ -49,7 +49,7 @@ function App() {
         <Route exact path='Accessories'element={<Accessories/>}/>
         <Route exact path='AsseSingle' element={<AsseSingle/>}/>
         <Route exact path='JeweSingle'element={<JeweSingle/>}/>
-        <Route exact path='WomenSingl' element={<WomenSingle/>}/>
+        <Route exact path='WomenSingle' element={<WomenSingle/>}/>
         <Route exact path='Checkout' element={<Checkout/>}/>
         <Route exact path='Mywishlest' element={<Mywishlest/>}/>
         
