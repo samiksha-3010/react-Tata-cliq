@@ -73,8 +73,15 @@ const Navbar = () => {
                         <p>Cliq Care </p>
                         <p>Track Order</p>
                         <p onClick={togo}>SignIn/SighUp</p>
-                        {/* <div id='profile section'>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        {/* <div id='profile-section'>
                             <p>profile section-drp-down</p>
+                            <div className='my-profile'>
+                                <div className='image'> <img style={{width: '50%', height: '50px'}} src='https://www.tatacliq.com/src/general/components/img/profile.png'/>
+                                <p>My</p>
+                                </div>
+                                <div><p>My Acount</p></div>
+                            </div>
                             </div> */}
                         </div>
                   

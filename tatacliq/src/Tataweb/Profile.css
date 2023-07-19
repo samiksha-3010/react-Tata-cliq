@@ -155,13 +155,13 @@
     height: 60px;
      margin-top: 50px;
      margin-left: 90px;
-     border-radius: 100px;
+     border-radius: 130px;
      background-color: #ececec ;
 
   
 }
 #cercle >p{
-    padding-top: 70px;
+    /* padding-top: 70px; */
     color: gray;
 
    

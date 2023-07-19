@@ -23,6 +23,7 @@ import JeweSingle from './Tataweb/JeweSingle';
 import WomenSingle from './Tataweb/WomenSingle';
 import Checkout from './Tataweb/Checkout'
 import Mywishlest from './Tataweb/Mywishlest';
+import MProfile from './Tataweb/MProfile';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Route exact path='WomenSingle' element={<WomenSingle/>}/>
         <Route exact path='Checkout' element={<Checkout/>}/>
         <Route exact path='Mywishlest' element={<Mywishlest/>}/>
+        <Route exact path='mprofile'element={<MProfile/>}/>
         
         
       

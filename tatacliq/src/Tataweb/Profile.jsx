@@ -67,19 +67,19 @@
                   <div className='name-details'>
 
                   <div className='first-name'><p>First Name</p></div>
-                  <div className='second-name'><p>First Name</p></div> 
+                  <div className='second-name'><p>Samiksha yadav</p></div> 
                 
                   </div>
                   <div className='name-details'>
 
-                   <div className='first-name'><p>First Name</p></div>
-                    <div className='second-name'><p>First Name</p></div> 
+                   <div className='first-name'><p>Last Name</p></div>
+                    <div className='second-name'><p>Yadav</p></div> 
 
                       </div>
                       <div className='name-details'>
 
-                        <div className='first-name'><p>First Name</p></div>
-                           <div className='second-name'><p>First Name</p></div> 
+                        <div className='first-name'><p>Adress</p></div>
+                           <div className='second-name'><p>Mumbai</p></div> 
 
                              </div>
                               </div>
@@ -90,14 +90,14 @@
                 <div className='detalis'>
                   <div className='name-details'>
 
-                  <div className='first-name'><p>First Name</p></div>
-                  <div className='second-name'><p>First Name</p></div> 
+                  <div className='first-name'><p>Mobile Nu</p></div>
+                  <div className='second-name'><p>859189099</p></div> 
                 
                   </div>
                   <div className='name-details'>
 
-                   <div className='first-name'><p>First Name</p></div>
-                    <div className='second-name'><p>First Name</p></div> 
+                   <div className='first-name'><p>Email</p></div>
+                    <div className='second-name'><p>samiksha30102@gmail.com</p></div> 
 
                       </div>
                      
@@ -122,6 +122,7 @@
                                </div>
                               <div id='last-page'>
                               <div id='cercle'>
+                                <img style={{width: '95%' , height: '55px', borderRadius: '100px'}} src='https://tse2.mm.bing.net/th?id=OIP.7SdhqriaKA9IvdxTU0lBUQHaHJ&pid=Api&P=0&h=180'/>
                                 <p>samiksha30102@gmail.com</p>
 
 

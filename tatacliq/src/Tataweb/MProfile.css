@@ -1,0 +1,71 @@
+*{
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+}
+#myprofile{
+    width: 30%;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 150px;
+}
+#myprofile>h1{
+    text-align:center ;
+    padding-top: 90px;
+}
+#myprofile>p{
+    margin-left: 90px;
+    color: gray;
+}
+#mobile-number{
+    width: 70%;
+    height: 60px;
+    border-bottom: 1px solid gray;
+    margin: auto;
+    margin-top: 20px;
+}
+#mobile-number>p{
+    color: gray;
+
+}
+#mobile-number>input{
+       border: none;
+}
+#email-adress{
+       width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+#email-adress>h4{
+    color: red;
+    text-align: center;
+}
+#email-adress>p{
+    font-size: small;
+    padding-top: 30px;
+
+}
+#email-adress>p>u>span{
+    color: red;
+}
+#buttton{
+       width: 80%;
+       height: 60px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+
+}
+#buttton>button{
+      border: none;
+      padding-top: 20px;
+   
+    
+
+}
