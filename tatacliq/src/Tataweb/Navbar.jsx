@@ -153,15 +153,8 @@ const Navbar = () => {
                             <i class="fa-solid fa-bag-shopping"></i> </div>
                             <div onClick={Mywishlest} id='wish'> <i class="fa-regular fa-heart"></i></div>
                         </div>
-                       
-                        
-
-                    </div>
-
-
-
-
-                </div>
+                       </div>
+                        </div>
 
 
             </div>
