@@ -57,6 +57,7 @@
                    </div>
 
           </div>
+          
           <div id='right-page'>
             <div id='information'> <p>General Information</p></div>
             <div className='besic-deatl'>
