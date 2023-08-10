@@ -33,7 +33,6 @@ function App() {
       <Navbar/>
     <Routes>
       
-   
         <Route exact path='CartPage' element={<CartPage/>}/>
         <Route exact path='Profile' element={<Profile/>}/>
         <Route exact path='SingleProduct'element={<SingleProduct/>}/>
