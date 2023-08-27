@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import cors from "cors"
-// import {  Login, Register, getCurrentUser,} from "./Controolers/User.Controolers.js"
+import { Login, Register, getCurrentUser } from './Controolers/User.Controolers.js';
 
 
 
@@ -13,11 +13,11 @@ app.use(cors())
 
 
 app.get("/", (req, res) => {
-    res.send("Working...samiksha")
+    res.send("Working...samiksha..backend")
 })
-// app.post("/register", Register)
-// app.post("/login", Login)
-// app.post("/get-current-user",getCurrentUser )
+app.post("/register", Register)
+app.post("/login", Login)
+app.post("/get-current-user",getCurrentUser )
 
 
 

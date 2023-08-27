@@ -72,9 +72,9 @@ const Navbar = () => {
                         <p>Gift Card</p>
                         <p>Cliq Care </p>
                         <p>Track Order</p>
-                        <p onClick={togo}>SignIn/SighUp</p>
+                        {/* <p onClick={togo}>SignIn/SighUp</p> */}
 
-                        <p onClick={togo}>SignIn/SighUp</p>
+                        <p onClick={()=>router("/MProfile ")}>SignIn/SighUp</p>
                         <i class="fa-solid fa-chevron-down"></i>
                         {/* <div id='profile-section'>
                             <p>profile section-drp-down</p>
