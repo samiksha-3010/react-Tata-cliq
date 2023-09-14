@@ -111,3 +111,4 @@ export const getCurrentUser= async (req, res) => {
     return res.json({ success: false, message: error });
   }
 };
+
