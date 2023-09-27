@@ -81,7 +81,7 @@ const LoginLogout = () => {
 </p>
 </div>
 
-<div id='buttton'><button>Countinue</button></div>
+<div id='buttton'><button>Countinue </button></div>
 
           {/* <div id="login-with">
             <img
@@ -103,14 +103,7 @@ const LoginLogout = () => {
 export default LoginLogout;
 
 
-// import React from 'react'
 
-// export const LoginLogout = () => {
-//   return (
-//     <div style={{marginTop:"200px"}}>LoginLogout</div>
-//   )
-// }
-//  export default LoginLogout;
 
 
 

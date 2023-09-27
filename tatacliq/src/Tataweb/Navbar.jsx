@@ -75,7 +75,8 @@ const Navbar = () => {
                         {/* <p onClick={togo}>SignIn/SighUp</p> */}
 
                         <p onClick={()=>router("/MProfile ")}>SignIn/SighUp</p>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <p>Logout</p>
+                        {/* <i class="fa-solid fa-chevron-down"></i> */}
                         {/* <div id='profile-section'>
                             <p>profile section-drp-down</p>
                             <div className='my-profile'>
