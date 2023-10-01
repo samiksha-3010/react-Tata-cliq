@@ -15,7 +15,7 @@
                   <span>My Wishlist</span>
                    </div>
                    <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/general/components/img/order-history.svg' />
+                  <img src='https://www.tatacliq.com/src/general/components/img/order-history.svg'/>
                   <span>Order History</span>
                    </div>
 
@@ -32,7 +32,7 @@
                   <span>Brand</span>
                    </div>
                    <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/card.svg' />
+                  <img src='https://www.tatacliq.com/src/account/components/img/card.svg'/>
                   <span>Saved Payment</span>
                    </div>
                    <div className='wishlest-icon'>

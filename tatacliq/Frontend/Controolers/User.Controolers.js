@@ -39,7 +39,7 @@ export const Register = async (req, res) => {
 export const Login = async (req, res) => {
   try {
     // .userdata
-    const { email, password } = req.body.userdata;
+    const { email, password } = req.body;
     if (!email || !password)
       return res.json({
         success: false,

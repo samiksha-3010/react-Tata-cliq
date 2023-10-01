@@ -26,8 +26,8 @@ import Mywishlest from './Tataweb/Mywishlest';
 import MProfile from './Tataweb/MProfile';
 import LoginLogout from './Tataweb/LoginLogout';
 import RegisterPage from './Tataweb/RegisterPage';
-
-
+import AddProduct from './Tataweb/Seller/AddProduct';
+import YourProduct from './Tataweb/Seller/YourProduct';
 
 function App() {
 
@@ -58,6 +58,9 @@ function App() {
         <Route exact path='mprofile'element={<MProfile/>}/>
         <Route exact path='Login-Logout'element={<LoginLogout/>}/>
         <Route exact path='Register-page'element={<RegisterPage/>}/>
+        <Route exact path='add-product'element={<AddProduct/>}/>
+        <Route exact path='your-product'element={<YourProduct/>}/>
+
 
         
         

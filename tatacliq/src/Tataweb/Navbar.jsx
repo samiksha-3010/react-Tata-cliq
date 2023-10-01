@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Nabvar.css'
 import { useNavigate } from 'react-router-dom'
+import AuthContext from './context/AuthContext';
 
 const Navbar = () => {
     const [dropDown, setDropdown] = useState(false);
     const [dropUp, setDropUp] = useState(true)
+    const {state, dispatch} = useContext(AuthContext);
+
 
     function open() {
         setDropdown(true)
@@ -56,12 +59,12 @@ const Navbar = () => {
 
 
     return (
-        <>
+        // <>
 
             <div id='navbar'>
 
                 <div id='divfirst' onClick={home}>
-                    <img src='https://coupontrends.in/img/1477323360_tatacliq.png' />
+                    <img src='https://coupontrends.in/img/1477323360_tatacliq.png' /> 
 
                 </div>
                 <div id='divsecond'>
@@ -72,20 +75,14 @@ const Navbar = () => {
                         <p>Gift Card</p>
                         <p>Cliq Care </p>
                         <p>Track Order</p>
-                        {/* <p onClick={togo}>SignIn/SighUp</p> */}
+                        {state?.user?.role == "Seller" &&<h4 onClick={() => router('/add-product')}>AddProduct</h4>}
+                        {state?.user?.role == "Seller" && <h4 onClick={() => router('/your-product')}>YourProduct</h4>}
 
-                        <p onClick={()=>router("/MProfile ")}>SignIn/SighUp</p>
-                        <p>Logout</p>
-                        {/* <i class="fa-solid fa-chevron-down"></i> */}
-                        {/* <div id='profile-section'>
-                            <p>profile section-drp-down</p>
-                            <div className='my-profile'>
-                                <div className='image'> <img style={{width: '50%', height: '50px'}} src='https://www.tatacliq.com/src/general/components/img/profile.png'/>
-                                <p>My</p>
-                                </div>
-                                <div><p>My Acount</p></div>
-                            </div>
-                            </div> */}
+
+                        
+
+                      
+                       
                         </div>
                   
                    
@@ -150,11 +147,13 @@ const Navbar = () => {
                                 <input type='search' placeholder='search for cetegreis' />
                             </div>
                         </div>
-                        <div className='bag-cart '>
+                              <div className='bag-cart '>
                         <div id='bag'onClick={CartPage} >
-                            {/* <i class="fa-regular fa-heart"></i> */}
                             <i class="fa-solid fa-bag-shopping"></i> </div>
                             <div onClick={Mywishlest} id='wish'> <i class="fa-regular fa-heart"></i></div>
+                            <p onClick={()=>router("/MProfile ")}>SignIn/SighUp</p>
+                        <p onClick={() => dispatch({ type: "LOGOUT" })}>Logout</p>
+                        <p onClick={()=>router("/Profile ")}>Profile</p>
                         </div>
                        </div>
                         </div>
@@ -162,11 +161,7 @@ const Navbar = () => {
 
             </div>
 
-
-
-            {/* </div> */}
-
-        </>
+        // </>
     )
 }
 

@@ -44,7 +44,6 @@ const reducer = (state, action) => {
             {children}
         </AuthContext.Provider>
     )
-
 }
 
 export default AuthContext;
