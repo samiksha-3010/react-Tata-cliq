@@ -53,7 +53,7 @@ const LoginLogout = () => {
         </div>
 
         <form onSubmit={handleSubmit}>
-          <input  className='input-tataa'
+          <input  className='input-tataa'value={userdata.email}
             type="email"
             onChange={hangleChange}
             name="email"
@@ -65,7 +65,7 @@ const LoginLogout = () => {
             type="password"
             onChange={hangleChange}
             name="password"
-            placeholder="Password *"
+            placeholder="Password *"value={userdata.password}
           />{" "}
           <br />
           {/* <input type="submit" value="Continue" /> */}

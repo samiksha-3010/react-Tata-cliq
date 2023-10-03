@@ -77,12 +77,6 @@ const Navbar = () => {
                         <p>Track Order</p>
                         {state?.user?.role == "Seller" &&<h4 onClick={() => router('/add-product')}>AddProduct</h4>}
                         {state?.user?.role == "Seller" && <h4 onClick={() => router('/your-product')}>YourProduct</h4>}
-
-
-                        
-
-                      
-                       
                         </div>
                   
                    

@@ -41,7 +41,7 @@ function App() {
         <Route exact path='SingleProduct'element={<SingleProduct/>}/>
         <Route exact path='MensMl' element={<MensMl/>}/>
         <Route exact path='Ceteg' element={<Ceteg/>}/>
-        <Route exact path='/home' element={<Home/>}/>
+        <Route exact path='/' element={<Home/>}/>
         <Route exact path='/Men' element={< Men/>}/>
         <Route exact path='/women' element={<Women/>}/>
         <Route exact path='kids' element={<Kids/>}/>

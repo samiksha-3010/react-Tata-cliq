@@ -1,7 +1,7 @@
 
 import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { AuthContext } from '../Context/Auth.Context';
+import AuthContext from '../context/AuthContext';
 
 const SellerProtected = ({ children }) => {
     const { state } = useContext(AuthContext)

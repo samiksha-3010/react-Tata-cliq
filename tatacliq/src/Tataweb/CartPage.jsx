@@ -7,7 +7,6 @@ function CartPage() {
     const router = useNavigate ()
     function Checkout(){
         router('/Checkout')
-
     }
   return (
     <div id='screen'>
