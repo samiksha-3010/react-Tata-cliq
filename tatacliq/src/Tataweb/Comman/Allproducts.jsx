@@ -11,7 +11,7 @@ const Allproducts = () => {
   useEffect(() => {
     async function getProducts() {
       try {
-        const response = await api.get("/all/all-products");
+        const response = await api.get("/all-products");
 
         console.log(response);
         // if (response.data.success)
@@ -27,7 +27,7 @@ const Allproducts = () => {
     getProducts();
   }, []);
 
-  // console.log(products)
+  console.log(products)
 
   return (
     <div>

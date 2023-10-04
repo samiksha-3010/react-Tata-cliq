@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import './Nabvar.css'
 import { useNavigate } from 'react-router-dom'
 import AuthContext from './context/AuthContext';
+import Allproducts from './Comman/Allproducts';
 
 const Navbar = () => {
     const [dropDown, setDropdown] = useState(false);
@@ -56,6 +57,9 @@ const Navbar = () => {
     function Mywishlest(){
         router ('/Mywishlest')
     }
+    // function Mywishlest(){
+    //     router ('/Allproducts')
+    // }
 
 
     return (
@@ -75,7 +79,9 @@ const Navbar = () => {
                         <p>Gift Card</p>
                         <p>Cliq Care </p>
                         <p>Track Order</p>
-                        {state?.user?.role == "Seller" &&<h4 onClick={() => router('/add-product')}>AddProduct</h4>}
+                  
+                        
+                        {state?.user?.role  == "Seller" &&<h4 onClick={() => router('/add-product')}>AddProduct</h4>}
                         {state?.user?.role == "Seller" && <h4 onClick={() => router('/your-product')}>YourProduct</h4>}
                         </div>
                   
@@ -87,6 +93,11 @@ const Navbar = () => {
                         </div>
                         {/* ********drop down******** */}
                         {dropDown && <div id='drop-down' onMouseEnter={open} onMouseLeave={close}>
+                        {/* <div className='women-fashion' onClick={Allproducts} >
+                                <p>All Product</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div> */}
+
                             <div className='women-fashion' onClick={women} >
                                 <p>Women-Fashion</p>
                                 <i class="fa-solid fa-chevron-down"></i>
@@ -145,7 +156,7 @@ const Navbar = () => {
                         <div id='bag'onClick={CartPage} >
                             <i class="fa-solid fa-bag-shopping"></i> </div>
                             <div onClick={Mywishlest} id='wish'> <i class="fa-regular fa-heart"></i></div>
-                            <p onClick={()=>router("/MProfile ")}>SignIn/SighUp</p>
+                            <p  onClick={()=>router("/MProfile ")}>SignIn/SighUp</p>
                         <p onClick={() => dispatch({ type: "LOGOUT" })}>Logout</p>
                         <p onClick={()=>router("/Profile ")}>Profile</p>
                         </div>

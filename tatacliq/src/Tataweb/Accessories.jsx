@@ -1,16 +1,69 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './Accessories.css'
 import { useNavigate } from 'react-router-dom'
+import AuthContext from './context/AuthContext'
+import toast from 'react-hot-toast'
 
 
 function Accessories() {
   const router = useNavigate()
   function AsseSingle () {
     router('/AsseSingle ')
+    const { state } = useContext(AuthContext);
+    // const [product, setProduct] = useState({});
+
+    // useEffect(() => {
+    //   if (state?.currentUser?.role == "Seller") {
+    //     setIsShowEditBtn(true);
+    //   } else {
+    //     setIsShowEditBtn(false);
+    //   }
+    // }, [state]);
+
+    // useEffect(() => {
+    //   if (state?.currentUser) {
+    //     setIsUserLoggedIn(true);
+    //     setCurrentUser(state.currentUser);
+    //   } else {
+    //     setIsUserLoggedIn(false);
+    //     setCurrentUser({});
+    //   }
+    // }, [state]);
+
+    // useEffect(() => {
+    //   // const allProducts = JSON.parse(localStorage.getItem("products"));
+    //   if (state?.allProducts?.length) {
+    //     const singleProduct = state?.allProducts.find(
+    //       (prod) => prod.id == singleProd.id
+    //     );
+    //     setProduct(singleProduct);
+    //   } else {
+    //     setProduct({});
+    //   }
+    // }, [state, singleProd]);
+
+    // const addToCart = () => {
+    //   if (isUserLoggedIn) {
+    //     const allUsers = JSON.parse(localStorage.getItem("users"));
+    //     for (let i = 0; i < allUsers.length; i++) {
+    //       if (
+    //         allUsers[i].email == currentUser.email &&
+    //         allUsers[i].password == currentUser.password &&
+    //         currentUser.role == "Buyer"
+    //       ) {
+    //         allUsers[i].cart.push(product);
+    //         localStorage.setItem("users", JSON.stringify(allUsers));
+    //         toast.success("Product added to cart!");
+    //         break;
+    //       }
+    //     }
+    //   } else {
+    //     toast.error("Please login to add product to cart!");
+    //   }
+    // };
+
   }
   return (
-
-
     <div id='menswenterwear-only'>
       <div id='winterwear'>
         <h2>Womens bags</h2>
@@ -21,9 +74,7 @@ function Accessories() {
           <p>Short By :Popularty</p>
           <i class="fa-solid fa-arrow-down-short-wide"></i>
         </div>
-        {/* <div id='icon2'>
-        <img src='https://www.tatacliq.com/src/plp/components/img/list.svg'/>
-                  </div> */}
+       
       </div>
       <div id='maincontainer'>
         <div id='containertxt'>
@@ -137,6 +188,7 @@ function Accessories() {
         <div id='containerimg'>
           
           <div>
+          {/* <img src={product.image} alt="single-product" /> */}
             <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000014016063_97Wx144H_202208022321121.jpeg' />
             <h4>Joyalukkas</h4>
             <p>Joyalukkas 22k Gold Earrings for Women
@@ -145,14 +197,11 @@ function Accessories() {
             <h6>Free shipping</h6>
 
 
-            {/* <div id='star'> 3.9
-              <i class="fa-regular fa-star"></i>
-              {/* <p> 14Ratings &2Reviews</p> */}
-             
-              {/* </div> */}
-
+         
               </div> 
           <div>
+          {/* <img src={product.image} alt="single-product" /> */}
+
           <img src='https://img.tatacliq.com/images/i8/97Wx144H/MP000000015361183_97Wx144H_202211210443291.jpeg' />
             <h4>Mia by Tanishq</h4>
             <p>Mia by Tanishq 18k Gold Stars Earrings for 
@@ -163,6 +212,7 @@ function Accessories() {
           </div>
           <div>
             <img src='https://img.tatacliq.com/images/i10/97Wx144H/MP000000017141626_97Wx144H_202304091649471.jpeg'/>
+            {/* <img src={product.image} alt="single-product" /> */}
 
             <h4>Tanishq</h4>
                 <p>Mia by Tanishq 18k Gold Stars Earrings for </p>          
@@ -171,6 +221,8 @@ function Accessories() {
 
           </div>
           <div>
+          {/* <img src={product.image} alt="single-product" />
+          <h3>MRP: ₹{product.price}</h3> */}
             <img  onClick={AsseSingle} src='https://img.tatacliq.com/images/i9/97Wx144H/MP000000016444465_97Wx144H_202302091527421.jpeg'/>
             <h4>Tanishq </h4>
                 <p>Mia by Tanishq 18k Gold Stars Earrings for</p>          
