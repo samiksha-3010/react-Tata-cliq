@@ -14,7 +14,7 @@ function Accessories() {
 
     // useEffect(() => {
     //   if (state?.currentUser?.role == "Seller") {
-    //     setIsShowEditBtn(true);
+    //     setIsShowEditBtn(true);1
     //   } else {
     //     setIsShowEditBtn(false);
     //   }

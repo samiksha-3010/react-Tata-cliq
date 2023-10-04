@@ -127,7 +127,7 @@ function Home  ()  {
             <img src='https://assets.tatacliq.com/medias/sys_master/images/47596853690398.jpg' />
           </div>
           <div className='ondemand-products-card-imageHolder'>
-            <img src='https://assets.tatacliq.com/medias/sys_master/images/47596865323038.jpg' />
+            <img src='https://assets.tatacliq.com/medias/sys_master/images/47596865323038.jpg'/>
           </div>
         </div>
 

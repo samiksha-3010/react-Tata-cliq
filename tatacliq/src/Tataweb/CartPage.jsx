@@ -1,6 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import'./CartPage.css'
 import { useNavigate } from 'react-router-dom'
+import AuthContext from './context/AuthContext'
+import axios from 'axios'
+import toast from 'react-hot-toast'
+import api from "./ApiConfig/index"
 
 
 function CartPage() {
@@ -9,68 +13,62 @@ function CartPage() {
         router('/Checkout')
 
         const [finalprice, setFinalPrice] = useState(0);
-        const [userCart, setUserCart] = useState([]);
-        const router = useNavigate();
-
+        const [cartProducts, setCartProducts] = useState([]);
+        const { state } = useContext(AuthContext);
+      
+        console.log(state, "state here");
+      
         useEffect(() => {
-            const user = JSON.parse(localStorage.getItem("CurrentUser"));
-            if (user?.email) {
-              const allUsers = JSON.parse(localStorage.getItem("Users"));
-              for (var i = 0; i < allUsers.length; i++) {
-                if (
-                  allUsers[i].email == user.email &&
-                  allUsers[i].password == user.password
-                ) {
-                  setUserCart(allUsers[i].cart);
-                  break;
-                }
+          async function getCartProduct() {
+            try {
+              const response = await api.post("/all-cart-products", {
+                userId: state?.user?._id,
+              });
+              if (response.data.success) {
+                setCartProducts(response.data.cartProducts);
               }
-            } else {
-                alert("Please login to watch all cart products.");
-                router("/login");
+            } catch (error) {
+              console.log(error, "error in cart");
+            }
+          }
+          if (state?.user?._id) {
+            getCartProduct();
+          }
+        }, [state]);
+      
+        console.log(cartProducts, "cartProducts here");
+      
+        const checkOut = async () => {
+          const token = JSON.parse(localStorage.getItem("token"));
+          console.log(token,"token here")
+            if (token) {
+              console.log(token,"token here")
+            try {
+              const response = await api.post("/checkOut", {token});
+              // console.log(response.data.success,"response here");
+              if (response.data.success) {
+                toast.success(response.data.message);
+                setCartProducts([]);
+                setFinalPrice([])
+              } else {
+                toast.error(response.data.message);
               }
-            }, []);
-            useEffect(() => {
-                if (userCart.length) {
-                  var totalprice = 0;
-                  for (var i = 0; i < userCart.length; i++) {
-                    totalprice += parseInt(userCart[i].price);
-                  }
-                  setFinalPrice(totalprice);
-                }
-              }, [userCart]);
-              useEffect(() => {
-                const user = JSON.parse(localStorage.getItem("CurrentUser"));
-                if (user) {
-                  if (user?.role == "Seller") {
-                    alert("Access granted only to Buyer.");
-                    router("/");
-                  }
-                } else {
-                    alert("You are not a Logged in user.");
-                    router("/login");
-                  }
-                }, []);
-
-                function checkout() {
-                    const user = JSON.parse(localStorage.getItem("CurrentUser"));
-                    if (user?.email) {
-                      const allUsers = JSON.parse(localStorage.getItem("Users"));
-                      for (var i = 0; i < allUsers.length; i++) {
-                        if (
-                          allUsers[i].email == user.email &&
-                          allUsers[i].password == user.password
-                        ) {
-                          allUsers[i].cart = [];
-                          break;
-                        }
-                      }
-                      localStorage.setItem("Users", JSON.stringify(allUsers));
-                    }
-                    setFinalPrice([]);
-                    setUserCart([]);
-                    alert("Your products will be delivered soon. Thankyou for shopping!");
-                  }
+            } catch (error) {
+              toast.error(error.message);
+            }
+          }
+        };
+        // }
+      
+        useEffect(() => {
+          if (cartProducts.length) {
+            var totalprice = 0;
+            for (var i = 0; i < cartProducts.length; i++) {
+              totalprice += cartProducts[i].price;
+            }
+            setFinalPrice(totalprice);
+          }
+        }, [cartProducts]);
 
     }
   return (
@@ -86,6 +84,7 @@ function CartPage() {
             </div>
             
             </div>
+          
             <div id='profile'>
                 <div id='my-bag'>
                     <h2>My Bag</h2>
