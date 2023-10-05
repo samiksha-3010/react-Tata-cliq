@@ -8,7 +8,6 @@ import { useParams } from 'react-router-dom';
 
 function SingleProduct() {
   const [userData, setUserData] = useState({});
-  // const [allowUpdate, setAllowUpdate] = useState(false);
   const { id } = useParams();
   const { state } = useContext(AuthContext);
   const [singleProductData, setSingleProductData] = useState({});

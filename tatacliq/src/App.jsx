@@ -29,6 +29,7 @@ import RegisterPage from './Tataweb/RegisterPage';
 import AddProduct from './Tataweb/Seller/AddProduct';
 import YourProduct from './Tataweb/Seller/YourProduct';
 import Allproducts from './Tataweb/Comman/Allproducts';
+import SinglePro from './Tataweb/SinglePro';
 // import SingleProduct from "./Tataweb/Comman/SingleProduct";
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
         <Route exact path='add-product'element={<AddProduct/>}/>
         <Route exact path='your-product'element={<YourProduct/>}/>
         <Route exact path='all-products'element={<Allproducts/>}/>
-        {/* <Route exact path='singleproduct'element={<SingleProduct/>}/> */}
+        {/* <Route exact path='singleproduct/:id'element={<SinglePro/>}/> */}
 
 
         
