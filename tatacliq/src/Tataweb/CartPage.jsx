@@ -183,15 +183,20 @@ function CartPage() {
         const [finalprice, setFinalPrice] = useState(0);
         const [cartProducts, setCartProducts] = useState([]);
         const { state } = useContext(AuthContext);
+        const router = useNavigate();
       
-        console.log(state, "state here");
+        // console.log(state, "state here");
       
         useEffect(() => {
           async function getCartProduct() {
             try {
-              const response = await api.post("/all-cart-products", {
-                userId: state?.user?._id,
-              });
+              const response = await axios.post(
+                "http://localhost:8000/all-cart-product",
+                { userId: state?.user?._id }
+              );
+              // const response = await api.post("/all-cart-products", {
+              //   userId: state?.user?._id,
+              // });
               if (response.data.success) {
                 setCartProducts(response.data.cartProducts);
               }
@@ -212,13 +217,17 @@ function CartPage() {
             if (token) {
               console.log(token,"token here")
             try {
-              const response = await api.post("/checkOut", {token});
+              const response = await axios.post("http://localhost:8000/remove-all-cart-products", {token});
+
+              // const response = await api.post("/checkOut", {token});
               // console.log(response.data.success,"response here");
               if (response.data.success) {
-                toast.success(response.data.message);
+                toast.success("cart product removed succesfully");
+                // toast.success(response.data.message);
                 setCartProducts([]);
                 setFinalPrice([])
               } else {
+                toast.error("Failed to remove the  cart product from the cart.");
                 toast.error(response.data.message);
               }
             } catch (error) {

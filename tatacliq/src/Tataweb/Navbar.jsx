@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import './Nabvar.css'
 import { useNavigate } from 'react-router-dom'
 import AuthContext from './context/AuthContext';
-import Allproducts from './Comman/Allproducts';
 
 const Navbar = () => {
     const [dropDown, setDropdown] = useState(false);
@@ -57,9 +56,9 @@ const Navbar = () => {
     function Mywishlest(){
         router ('/Mywishlest')
     }
-    // function Mywishlest(){
-    //     router ('/Allproducts')
-    // }
+    function Allproducts(){
+        router ('/all-products')
+    }
 
 
     return (
@@ -93,10 +92,10 @@ const Navbar = () => {
                         </div>
                         {/* ********drop down******** */}
                         {dropDown && <div id='drop-down' onMouseEnter={open} onMouseLeave={close}>
-                        {/* <div className='women-fashion' onClick={Allproducts} >
+                        <div className='women-fashion' onClick={Allproducts} >
                                 <p>All Product</p>
                                 <i class="fa-solid fa-chevron-down"></i>
-                            </div> */}
+                            </div>
 
                             <div className='women-fashion' onClick={women} >
                                 <p>Women-Fashion</p>
@@ -156,7 +155,7 @@ const Navbar = () => {
                         <div id='bag'onClick={CartPage} >
                             <i class="fa-solid fa-bag-shopping"></i> </div>
                             <div onClick={Mywishlest} id='wish'> <i class="fa-regular fa-heart"></i></div>
-                            <p  onClick={()=>router("/MProfile ")}>SignIn/SighUp</p>
+                            <p  onClick={()=>router("/Login-Logout ")}>SignIn/SighUp</p>
                         <p onClick={() => dispatch({ type: "LOGOUT" })}>Logout</p>
                         <p onClick={()=>router("/Profile ")}>Profile</p>
                         </div>

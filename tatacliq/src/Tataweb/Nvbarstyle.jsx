@@ -1,331 +1,333 @@
 
-// import React, { useContext, useEffect, useState } from "react";
-// import "./Navbarstyle.css"
-// import { useNavigate } from "react-router-dom";
 
-// import axios from "axios";
-// import { toast } from "react-hot-toast";
-// import Register from "./RegisterPage";
-// import AuthContext from "./context/AuthContext";
-// import MProfile from "./MProfile";
 
-// const Navbar = () => {
-//   const { state, dispatch } = useContext(AuthContext);
-//   // ---------------------------------------------------------------
-//   const [display, setDisplay] = useState(false); 
-//   const [loginopen, setLoginopen] = useState(false);
-//   const [regopen, setRegopen] = useState(false);
-//   const [open, setOpen] = useState(false); 
-//   const [isbackgroundColor, setIsbackgroundColor] = useState(false); 
-//   const router = useNavigate();
-//   const [userdata, setUserdata] = useState({
-//     email: "",
-//     password: "",
-//   });
-//   const hangleChangeLogin = (event) => {
-//     setUserdata({ ...userdata, [event.target.name]: event.target.value });
-//   };
+import React, { useContext, useEffect, useState } from "react";
+import "./Navbarstyle.css"
+import { useNavigate } from "react-router-dom";
 
-//   // -----------------------for cart----------------------
+import axios from "axios";
+import { toast } from "react-hot-toast";
+import Register from "./RegisterPage";
+import AuthContext from "./context/AuthContext";
+import MProfile from "./MProfile";
 
-//   const handleMouseEnter = () => {
-//     setDisplay(true);
-//   };
+const Nvbarstyle = () => {
+  const { state, dispatch } = useContext(AuthContext);
+  // ---------------------------------------------------------------
+  const [display, setDisplay] = useState(false); 
+  const [loginopen, setLoginopen] = useState(false);
+  const [regopen, setRegopen] = useState(false);
+  const [open, setOpen] = useState(false); 
+  const [isbackgroundColor, setIsbackgroundColor] = useState(false); 
+  const router = useNavigate();
+  const [userdata, setUserdata] = useState({
+    email: "",
+    password: "",
+  });
+  const hangleChangeLogin = (event) => {
+    setUserdata({ ...userdata, [event.target.name]: event.target.value });
+  };
 
-//   const handleMouseLeave = () => {
-//     setDisplay(false);
-//   };
+  // -----------------------for cart----------------------
 
-//   const letopen = () => {
-//     setLoginopen(true);
-//     setRegopen(false);
-//   };
+  const handleMouseEnter = () => {
+    setDisplay(true);
+  };
 
-//   const letclose = () => {
-//     setLoginopen(false);
-//   };
+  const handleMouseLeave = () => {
+    setDisplay(false);
+  };
 
-//   // const [regopen, setRegopen] = useState(false);
+  const letopen = () => {
+    setLoginopen(true);
+    setRegopen(false);
+  };
 
-//   const letopenREG = () => {
-//     setLoginopen(false);
-//     setRegopen(true);
-//   };
+  const letclose = () => {
+    setLoginopen(false);
+  };
 
-//   const letcloseREG = () => {
-//     setRegopen(false);
-//   };
+  // const [regopen, setRegopen] = useState(false);
 
-//   //   --------------------for categories--------------------------
+  const letopenREG = () => {
+    setLoginopen(false);
+    setRegopen(true);
+  };
 
-//   const letOpen = () => {
-//     setOpen(true);
-//     setIsbackgroundColor(true);
-//   };
-//   const letClose = () => {
-//     setOpen(false);
-//     setIsbackgroundColor(false);
-//   };
+  const letcloseREG = () => {
+    setRegopen(false);
+  };
 
-//   const handleSubmit = async (event) => {
-//     event.preventDefault();
-//     if (userdata.email && userdata.password) {
-//       const response = await axios.post("http://localhost:8000/login", {
-//         userdata
-//       });
-//       if (response.data.success) {
-//         dispatch({
-//           type: "LOGIN",
-//           payload: response.data.user,
-//         });
-//         localStorage.setItem("token", JSON.stringify(response.data.token));
-//         setUserdata({ email: "", password: "" });
-//         router("/");
-//         toast.success(response.data.message);
-//       } else {
-//         toast.error(response.data.message);
-//       }
-//     } else {
-//       toast.error("All fields are mandtory.");
-//     }
-//   };
+  //   --------------------for categories--------------------------
 
-//   useEffect(() => {
-//     // console.log(state,"statehere")
-//     if (state?.user) {
-//       setUserdata(state?.user);
-//     } else {
-//       setUserdata({});
-//     }
-//   }, [state]);
+  const letOpen = () => {
+    setOpen(true);
+    setIsbackgroundColor(true);
+  };
+  const letClose = () => {
+    setOpen(false);
+    setIsbackgroundColor(false);
+  };
 
-//   // console.log(userdata, "datahere");
-//   return (
-//     <>
-//       <div id="navbar">
-//         <div id="tata-logo">
-//           <div onClick={() => router("/")}>
-//             <img
-//               src="http://www.pngimagesfree.com/LOGO/T/Tata-CLiQ/Tata-cliq-logo-PNG-White.png"
-//               alt=""
-//             />
-//           </div>
-//         </div>
-//         <div id="nav-option">
-//           <div id="up-bar">
-//             <span>Tata CLiQ Luxury</span>
-//             <span>
-//               <span>CLiQ Cash </span>
-//               <span>Gift Card</span>
-//               <span>CLiQ Care</span>
-//               <span>Track Orders</span>
-//               <span onClick={letopen}>
-//                 <i class="fa-regular fa-circle-user fa-lg"></i>
-//               </span>
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (userdata.email && userdata.password) {
+      const response = await axios.post("http://localhost:8000/login", {
+        userdata
+      });
+      if (response.data.success) {
+        dispatch({
+          type: "LOGIN",
+          payload: response.data.user,
+        });
+        localStorage.setItem("token", JSON.stringify(response.data.token));
+        setUserdata({ email: "", password: "" });
+        router("/");
+        toast.success(response.data.message);
+      } else {
+        toast.error(response.data.message);
+      }
+    } else {
+      toast.error("All fields are mandtory.");
+    }
+  };
 
-//               {userdata?.email && (
-//                 <span onMouseEnter={handleMouseEnter}>
-//                   {userdata.name}
-//                   <i className="fa-solid fa-chevron-down fa-lg"></i>
-//                 </span>
-//               )}
-//               {!userdata?.email && (
-//                 <span onClick={letopen}>
-//                   {" "}
-//                   Login/Register{" "}
-//                   <i className="fa-solid fa-chevron-down fa-lg"></i>
-//                 </span>
-//               )}
+  useEffect(() => {
+    // console.log(state,"statehere")
+    if (state?.user) {
+      setUserdata(state?.user);
+    } else {
+      setUserdata({});
+    }
+  }, [state]);
 
-//               {state?.user?.role === "Seller" && (
-//                 <span onClick={() => router("/add-product")}>
-//                   <i className="fa-solid fa-plus">AddProduct </i>
+  // console.log(userdata, "datahere");
+  return (
+    <>
+      <div id="navbar">
+        <div id="tata-logo">
+          <div onClick={() => router("/")}>
+            <img
+              src="http://www.pngimagesfree.com/LOGO/T/Tata-CLiQ/Tata-cliq-logo-PNG-White.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div id="nav-option">
+          <div id="up-bar">
+            <span>Tata CLiQ Luxury</span>
+            <span>
+              <span>CLiQ Cash </span>
+              <span>Gift Card</span>
+              <span>CLiQ Care</span>
+              <span>Track Orders</span>
+              <span onClick={letopen}>
+                <i class="fa-regular fa-circle-user fa-lg"></i>
+              </span>
+
+              {userdata?.email && (
+                <span onMouseEnter={handleMouseEnter}>
+                  {userdata.name}
+                  <i className="fa-solid fa-chevron-down fa-lg"></i>
+                </span>
+              )}
+              {!userdata?.email && (
+                <span onClick={letopen}>
+                  {" "}
+                  Login/Register{" "}
+                  <i className="fa-solid fa-chevron-down fa-lg"></i>
+                </span>
+              )}
+
+              {state?.user?.role === "Seller" && (
+                <span onClick={() => router("/add-product")}>
+                  <i className="fa-solid fa-plus">AddProduct </i>
 
               
-//                 </span>
-//               )}
+                </span>
+              )}
 
-// {state?.user?.role === "Seller" && (
-//                 <span onClick={() => router("/your-product")}>
-//                   <i
+{state?.user?.role === "Seller" && (
+                <span onClick={() => router("/your-product")}>
+                  <i
                      
-//                      className="fa-solid fa-bars"
-//                    >YourProduct</i>
+                     className="fa-solid fa-bars"
+                   >YourProduct</i>
 
               
-//                 </span>
-//               )}
+                </span>
+              )}
 
-// <span >
-//                     {" "}
+<span >
+                    {" "}
                    
-//                   </span>
-//             </span>
+                  </span>
+            </span>
 
-//             {display && (
-//               <div id="profile-down" onMouseLeave={handleMouseLeave}>
-//                 <div onClick={() => router("/Profile")}>
-//                   <img
-//                     src="https://www.tatacliq.com/src/general/components/img/profile.png"
-//                     alt=""
-//                   />{" "}
-//                   <p>My Account</p>
-//                 </div>
-//                 <div>
-//                   <img
-//                     src="https://www.tatacliq.com/src/general/components/img/order-history.svg"
-//                     alt=""
-//                   />{" "}
-//                   <p>Order History</p>
-//                 </div>
-//                 <div onClick={() => router("/Wishlist")}>
-//                   <img
-//                     src="https://www.tatacliq.com/src/general/components/img/WL5.svg"
-//                     alt=""
-//                   />{" "}
-//                   <p>My Wishlist</p>
-//                 </div>
-//                 <div>
-//                   <img
-//                     src="https://www.tatacliq.com/src/account/components/img/alert.svg"
-//                     alt=""
-//                   />{" "}
-//                   <p>Alert & Coupon</p>
-//                 </div>
-//                 <div>
-//                   <img
-//                     src="https://www.tatacliq.com/src/account/components/img/giftCards.svg"
-//                     alt=""
-//                   />{" "}
-//                   <p>Gift Card</p>
-//                 </div>
-//                 <div>
-//                   <img
-//                     src="https://www.tatacliq.com/src/account/components/img/cliqCash.svg"
-//                     alt=""
-//                   />{" "}
-//                   <p>CLiQ Cash</p>
-//                 </div>
-//                 {/* onClick={logout} */}
-//                 <div  onClick={() => dispatch({ type: "LOGOUT" })}>
-//                   <img
-//                     src="https://www.tatacliq.com/src/account/components/img/settings.svg"
-//                     alt=""
-//                   />{" "}
-//                   <p>Logout</p>
-//                 </div>
-//               </div>
-//             )}
-//           </div>
-//           <div id="down-bar">
-//             <div
-//               className="margin-top"
-//               onMouseEnter={letOpen}
-//               onMouseLeave={letClose}
-//               style={{
-//                 backgroundColor: isbackgroundColor ? "white" : "#212121",
-//                 color: isbackgroundColor ? "black" : "white",
-//               }}
-//             >
-//               Categories <i className="fa-solid fa-angle-down"></i>
-//             </div>
-//             <div className="margin-top">
-//               Brand <i className="fa-solid fa-angle-down"></i>
-//             </div>
-//             <div>
-//               <div>
-//                 {" "}
-//                 <i className="fa-solid fa-magnifying-glass"></i>
-//                 <input type="search" placeholder="Search for Brands" />
-//               </div>
-//             </div>
-//             <div id="down-bar-logo">
-//               <i
-//                 className="fa-regular fa-heart fa-lg"
-//                 onClick={() => router("/Mywishlest")}
-//               ></i>
-//               <i
-//                 className="fa-solid fa-bag-shopping fa-lg"
-//                 onClick={() => router("/CartPage")}
-//               ></i>
-//             </div>
-//           </div>
+            {display && (
+              <div id="profile-down" onMouseLeave={handleMouseLeave}>
+                <div onClick={() => router("/Profile")}>
+                  <img
+                    src="https://www.tatacliq.com/src/general/components/img/profile.png"
+                    alt=""
+                  />{" "}
+                  <p>My Account</p>
+                </div>
+                <div>
+                  <img
+                    src="https://www.tatacliq.com/src/general/components/img/order-history.svg"
+                    alt=""
+                  />{" "}
+                  <p>Order History</p>
+                </div>
+                <div onClick={() => router("/Wishlist")}>
+                  <img
+                    src="https://www.tatacliq.com/src/general/components/img/WL5.svg"
+                    alt=""
+                  />{" "}
+                  <p>My Wishlist</p>
+                </div>
+                <div>
+                  <img
+                    src="https://www.tatacliq.com/src/account/components/img/alert.svg"
+                    alt=""
+                  />{" "}
+                  <p>Alert & Coupon</p>
+                </div>
+                <div>
+                  <img
+                    src="https://www.tatacliq.com/src/account/components/img/giftCards.svg"
+                    alt=""
+                  />{" "}
+                  <p>Gift Card</p>
+                </div>
+                <div>
+                  <img
+                    src="https://www.tatacliq.com/src/account/components/img/cliqCash.svg"
+                    alt=""
+                  />{" "}
+                  <p>CLiQ Cash</p>
+                </div>
+                {/* onClick={logout} */}
+                <div  onClick={() => dispatch({ type: "LOGOUT" })}>
+                  <img
+                    src="https://www.tatacliq.com/src/account/components/img/settings.svg"
+                    alt=""
+                  />{" "}
+                  <p>Logout</p>
+                </div>
+              </div>
+            )}
+          </div>
+          <div id="down-bar">
+            <div
+              className="margin-top"
+              onMouseEnter={letOpen}
+              onMouseLeave={letClose}
+              style={{
+                backgroundColor: isbackgroundColor ? "white" : "#212121",
+                color: isbackgroundColor ? "black" : "white",
+              }}
+            >
+              Categories <i className="fa-solid fa-angle-down"></i>
+            </div>
+            <div className="margin-top">
+              Brand <i className="fa-solid fa-angle-down"></i>
+            </div>
+            <div>
+              <div>
+                {" "}
+                <i className="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search for Brands" />
+              </div>
+            </div>
+            <div id="down-bar-logo">
+              <i
+                className="fa-regular fa-heart fa-lg"
+                onClick={() => router("/Mywishlest")}
+              ></i>
+              <i
+                className="fa-solid fa-bag-shopping fa-lg"
+                onClick={() => router("/CartPage")}
+              ></i>
+            </div>
+          </div>
 
-//           {open && (
-//             <div
-//               id="categories-down"
-//               onMouseEnter={letOpen}
-//               onMouseLeave={letClose}
-//             >
-//               <div id="rowone">
-//                 <p onClick={() => router("/Allproduct")}>Explore</p>
-//                 <p onClick={() => router("/WomensMultiplepro")}>
-//                   Women's Fashion
-//                 </p>
-//                 <p onClick={() => router("/MensMultiplepro")}>Men's Fashion</p>
-//                 <p onClick={() => router("/Kidswear")}>Kid's Fashion</p>
-//                 <p onClick={() => router("/HomeKit")}>Home & Kitchen</p>
-//                 <p onClick={() => router("/Beauty")}>Beauty</p>
-//                 <p onClick={() => router("/Gadget")}>Gadgets</p>
-//                 <p onClick={() => router("/Jwellery")}>Jewellery</p>
-//                 <p onClick={() => router("/Accessories")}>Accessories</p>
-//               </div>
-//             </div>
-//           )}
-//         </div>
+          {open && (
+            <div
+              id="categories-down"
+              onMouseEnter={letOpen}
+              onMouseLeave={letClose}
+            >
+              <div id="rowone">
+                <p onClick={() => router("/Allproduct")}>Explore</p>
+                <p onClick={() => router("/WomensMultiplepro")}>
+                  Women's Fashion
+                </p>
+                <p onClick={() => router("/MensMultiplepro")}>Men's Fashion</p>
+                <p onClick={() => router("/Kidswear")}>Kid's Fashion</p>
+                <p onClick={() => router("/HomeKit")}>Home & Kitchen</p>
+                <p onClick={() => router("/Beauty")}>Beauty</p>
+                <p onClick={() => router("/Gadget")}>Gadgets</p>
+                <p onClick={() => router("/Jwellery")}>Jewellery</p>
+                <p onClick={() => router("/Accessories")}>Accessories</p>
+              </div>
+            </div>
+          )}
+        </div>
 
-//         {loginopen && (
-//           <>
-//             <div id="login-body">
-//               <div id="login">
-//                 <span onClick={letclose}>
-//                   <i className="fa-solid fa-x"></i>
-//                 </span>
-//                 <h1>Welcome to Tata </h1>
-//                 <h1>CLiQ</h1>
+        {loginopen && (
+          <>
+            <div id="login-body">
+              <div id="login">
+                <span onClick={letclose}>
+                  <i className="fa-solid fa-x"></i>
+                </span>
+                <h1>Welcome to Tata </h1>
+                <h1>CLiQ</h1>
 
-//                 <form onSubmit={handleSubmit}>
-//                   <input
-//                     placeholder="E-mail Address"
-//                     type="email"
-//                     name="email"
-//                     onChange={hangleChangeLogin}
-//                     value={userdata.email}
-//                   />
+                <form onSubmit={handleSubmit}>
+                  <input
+                    placeholder="E-mail Address"
+                    type="email"
+                    name="email"
+                    onChange={hangleChangeLogin}
+                    value={userdata.email}
+                  />
 
-//                   <br />
+                  <br />
 
-//                   <input
-//                     placeholder="Password"
-//                     type="password"
-//                     name="password"
-//                     onChange={hangleChangeLogin}
-//                     value={userdata.password}
-//                   />
+                  <input
+                    placeholder="Password"
+                    type="password"
+                    name="password"
+                    onChange={hangleChangeLogin}
+                    value={userdata.password}
+                  />
 
-//                   <p>
-//                     By continuing, you agree to our <b>Terms of Use</b> and{" "}
-//                     <b>Privacy Policy</b>{" "}
-//                   </p>
-//                   <p>
-//                     haven't registered yet here ?{" "}
-//                     <b onClick={letopenREG}>Click here</b>
-//                     <p onClick={MProfile}>New Register</p>
-//                   </p>
+                  <p>
+                    By continuing, you agree to our <b>Terms of Use</b> and{" "}
+                    <b>Privacy Policy</b>{" "}
+                  </p>
+                  <p>
+                    haven't registered yet here ?{" "}
+                    <b onClick={letopenREG}>Click here</b>
+                    <p onClick={MProfile}>New Register</p>
+                  </p>
 
-//                   <input id="button-login" type="submit" value="Login" />
-//                 </form>
-//               </div>
-//             </div>
-//           </>
-//         )}
+                  <input id="button-login" type="submit" value="Login" />
+                </form>
+              </div>
+            </div>
+          </>
+        )}
 
-//         {regopen && (
-//           <Register letcloseREG={letcloseREG} onClose={letcloseREG} />
-//         )}
-//       </div>
-//     </>
-//   );
-// };
+        {regopen && (
+          <Register letcloseREG={letcloseREG} onClose={letcloseREG} />
+        )}
+      </div>
+    </>
+  );
+};
 
-// export default Navbar;
+export default Nvbarstyle;

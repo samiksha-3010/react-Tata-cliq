@@ -1,139 +1,251 @@
- import React from 'react'
- import './Profile.css'
- 
- function Profile() {
-   return (
+
+import React, { useEffect, useState } from "react";
+import "./Profile.css";
+
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import AuthContext from "./context/AuthContext";
+import Navbar from "./Navbar";
+
+const Profile = () => {
+  const { login } = useContext(AuthContext);
+  const [display, setDisplay] = useState(false);
+  const router = useNavigate();
+  const [userData, setUserData] = useState({});
+
+  const open = () => {
+    setDisplay(true);
+  };
+
+  const close = () => {
+    setDisplay(false);
+  };
+
+  // useEffect(() => {
+  //   const currentUser = JSON.parse(localStorage.getItem("CurrentUser"));
+  //   if (!currentUser) {
+  //     router("/");
+  //   }
+  //   const allUsers = JSON.parse(localStorage.getItem("Users"));
+  //   if (currentUser && allUsers) {
+  //     for (var i = 0; i < allUsers.length; i++) {
+  //       if (
+  //         allUsers[i].email == currentUser.email &&
+  //         allUsers[i].password == currentUser.password
+  //       ) {
+  //         setUserData(allUsers[i]);
+  //       }
+  //     }
+  //   }
+  // }, []);
+
+  function handleChange(event) {
+    setUserData({ ...userData, [event.target.name]: event.target.value });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const currentUser = JSON.parse(localStorage.getItem("CurrentUser"));
+    const allUsers = JSON.parse(localStorage.getItem("Users"));
+    for (var i = 0; i < allUsers.length; i++) {
+      if (
+        allUsers[i].email == currentUser.email &&
+        allUsers[i].password == currentUser.password
+      ) {
+        allUsers[i].name = userData.name;
+        allUsers[i].password = userData.password;
+        currentUser.password = userData.password;
+        currentUser.name = userData.name;
+      }
+    }
+
+    login(currentUser);
+    localStorage.setItem("CurrentUser", JSON.stringify(currentUser));
+    localStorage.setItem("Users", JSON.stringify(allUsers));
+    setUserData({});
+    alert("Profile updated.");
+  }
+  return (
     <>
-    <div id='screen'>
-     <div id='profile-page'>
-          <div id='left-page'>
-          <div id='menu'><p>Menu</p></div>
-            <div id='icon-image'>
-                 </div>
-                 <div  className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/general/components/img/WL5.svg' />
-                  <span>My Wishlist</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/general/components/img/order-history.svg'/>
-                  <span>Order History</span>
-                   </div>
+      <Navbar />
+      <div id="Profile-body">
+        <div id="another">
+          <div id="left-pro">
+            <h3>Menu </h3>
 
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/Neupass_monochrome.svg' />
-                  <span>Neu Pass</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/addressbook.svg' />
-                  <span>Adress Book</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/brand.svg' />
-                  <span>Brand</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/card.svg'/>
-                  <span>Saved Payment</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/alert.svg' />
-                  <span>Alert& Coupan</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/giftCards.svg' />
-                  <span>Gift Card</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/cliqCash.svg' />
-                  <span>cLIQ Cash</span>
-                   </div>
-                   <div className='wishlest-icon'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/addressbook.svg' />
-                  <span>Manage Notification</span>
-                   </div>
-                   <div className='setting'>
-                  <img src='https://www.tatacliq.com/src/account/components/img/settingsRed.svg' />
-                  <span>Setting</span>
-                   </div>
-
+            <div>
+              <img
+                src="https://www.tatacliq.com/src/general/components/img/WL5.svg"
+                alt=""
+              />{" "}
+              <span>My Wishlist</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/general/components/img/order-history.svg"
+                alt=""
+              />{" "}
+              <span>Order History</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/account/components/img/addressbook.svg"
+                alt=""
+              />{" "}
+              <span>Address Book</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/account/components/img/brand.svg"
+                alt=""
+              />{" "}
+              <span>Brands</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/account/components/img/card.svg"
+                alt=""
+              />{" "}
+              <span>Saved Payments</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/account/components/img/alert.svg"
+                alt=""
+              />{" "}
+              <span>Alerts & Coupons</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/account/components/img/giftCards.svg"
+                alt=""
+              />{" "}
+              <span>Gift Card</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/account/components/img/cliqCash.svg"
+                alt=""
+              />{" "}
+              <span>CLiQ Cash</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="https://www.tatacliq.com/src/account/components/img/addressbook.svg"
+                alt=""
+              />{" "}
+              <span>Manage Notifications</span>
+            </div>
+            <div>
+              {" "}
+              <img
+                src="	https://www.tatacliq.com/src/account/components/img/settingsRed.svg"
+                alt=""
+              />{" "}
+              <span>Profile</span>
+            </div>
           </div>
-          
-          <div id='right-page'>
-            <div id='information'> <p>General Information</p></div>
-            <div className='besic-deatl'>
-                <b>Besic Detail</b>
-                <p>Add</p> 
+          <div id="Right-pro">
+            <h3>General Information </h3>
+            <div>
+              <p>
+                <span>Basic Details</span> <span onClick={open}>Add</span>{" "}
+              </p>
+
+              <div>
+                <div>
+                  <div>First Name</div>
+                  <input type="text" placeholder="First Name" />
                 </div>
-                <div className='detalis'>
-                  <div className='name-details'>
 
-                  <div className='first-name'><p>First Name</p></div>
-                  <div className='second-name'><p>Samiksha yadav</p></div> 
-                
-                  </div>
-                  <div className='name-details'>
-
-                   <div className='first-name'><p>Last Name</p></div>
-                    <div className='second-name'><p>Yadav</p></div> 
-
-                      </div>
-                      <div className='name-details'>
-
-                        <div className='first-name'><p>Adress</p></div>
-                           <div className='second-name'><p>Mumbai</p></div> 
-
-                             </div>
-                              </div>
-                              <div className='besic-deatl'>
-                <b>Contact Details</b>
-                <p>Edit</p> 
+                <div>
+                  <div>Last Name</div>
+                  <input type="text" placeholder="Last Name" />
                 </div>
-                <div className='detalis'>
-                  <div className='name-details'>
 
-                  <div className='first-name'><p>Mobile Nu</p></div>
-                  <div className='second-name'><p>859189099</p></div> 
-                
-                  </div>
-                  <div className='name-details'>
-
-                   <div className='first-name'><p>Email</p></div>
-                    <div className='second-name'><p>samiksha30102@gmail.com</p></div> 
-
-                      </div>
-                     
-                              </div>
-
-                              <div className='besic-deatl'>
-                <b>Personal Details</b>
-                <p>Edit</p> 
+                <div>
+                  <div>Date of Birth</div>
+                  <input type="text" placeholder="dd-mm-yyyy" />
                 </div>
-                <div className='detalis'>
-                  <div className='name-details'>
+              </div>
+            </div>
 
-                  <div className='first-name'><p>Gender</p></div>
-                  <div className='second-name'></div> 
-                
-                  </div>
-                  
-                     
-                              </div>
-                              
-                              
-                               </div>
-                              <div id='last-page'>
-                              <div id='cercle'>
-                                <img style={{width: '95%' , height: '55px', borderRadius: '100px'}} src='https://tse2.mm.bing.net/th?id=OIP.7SdhqriaKA9IvdxTU0lBUQHaHJ&pid=Api&P=0&h=180'/>
-                                <p>samiksha30102@gmail.com</p>
+            <div>
+              <p>
+                <span>Contact Details</span> <span>Edit</span>{" "}
+              </p>
 
+              <div>
+                <div>
+                  <div>Mobile Number</div>
+                  <input type="text" placeholder="Mobile Number" />
+                </div>
 
-                              </div>
+                <div>
+                  <div>E-mail</div>
+                  <input type="text" placeholder="Email" />
+                </div>
+              </div>
+            </div>
 
-                              </div>
+            <div>
+              <p>
+                <span>Personal Details</span> <span>Add</span>{" "}
+              </p>
+
+              <div>
+                <div>
+                  <div>Gender</div>
+                  <input type="text" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="profile-info">
+            <div></div>
+
+            <p>{userData.name} </p>
+            <p>{userData.email}</p>
+          </div>
         </div>
-        </div>
-     </>
-   )
- }
- 
- export default Profile
+
+        {display && (
+          <div id="edit">
+            <form onSubmit={handleSubmit}>
+              <h1>Profile</h1>
+              <label>Change Name</label>
+              <br />
+              <input
+                type="text"
+                value={userData.name}
+                name="name"
+                onChange={handleChange}
+              />
+              <br />
+              <label>Change Password</label>
+              <br />
+              <input
+                type="text"
+                value={userData.password}
+                name="password"
+                onChange={handleChange}
+              />
+              <br />
+              <input type="submit" />
+            </form>
+          </div>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default Profile;

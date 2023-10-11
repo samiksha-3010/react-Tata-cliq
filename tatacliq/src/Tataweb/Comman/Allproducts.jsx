@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import api from "../ApiConfig/index";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Allproducts = () => {
   const [products, setProducts] = useState();
@@ -11,7 +12,9 @@ const Allproducts = () => {
   useEffect(() => {
     async function getProducts() {
       try {
-        const response = await api.get("/all-products");
+        // const response = await axios.get("http://localhost:8000/all-products", { token });
+
+         const response = await api.get("/all-products");
 
         console.log(response);
         // if (response.data.success)
@@ -31,7 +34,7 @@ const Allproducts = () => {
 
   return (
     <div>
-      <h1>All Products</h1>
+      <h1 style={{paddingTop:"100px",color:"red"}}>All Products</h1>
       <div>
         {products?.length ? (
           <div
@@ -43,7 +46,7 @@ const Allproducts = () => {
           >
            {products.map((pro) => (
               <div
-                onClick={() => router(`/singleproduct/${pro._id}`)}
+                onClick={() => router(`/singleproduct /${pro._id}`)}
                 style={{
                   width: "23%",
                   height: "450px",
@@ -62,7 +65,7 @@ const Allproducts = () => {
             ))}
           </div>
         ) : (
-          <div>Loading!!..</div>
+          <div style={{paddingTop:"100px",color:"red"}}>Loading!!..</div>
         )}
       </div>
     </div>

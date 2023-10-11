@@ -1,14 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import api from "../ApiConfig/index";
-// import { toast } from "react-hot-toast";
+import AuthContext from "../context/AuthContext";
+ import { toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 const YourProducts = () => {
-  const [allProducts, setAllProducts] = useState();
+  const [allProducts, setAllProducts] = useState([]);
+  // const [editData , seteditData] = useState({
+    //     name:"",
+    //     price:"",
+    //     image:"",
+    //     category:""
+    //   })
+  const {state} = useContext(AuthContext)
+  const router = useNavigate()
+
   useEffect(() => {
     async function getProducts() {
       try {
         const token = JSON.parse(localStorage.getItem("token"));
+        // const response = await axios.post("http://localhost:8000/get-your-products", { token })
+
         const response = await api.post("/get-your-products", { token });
         if (response.data.success) {
           setAllProducts(response.data.products);
@@ -19,11 +33,25 @@ const YourProducts = () => {
     }
     getProducts();
   }, []);
+
+//   const editProduct = (id) => {
+//     try {
+        
+//     } catch (error) {
+//         toast.error("An error occurred while editing the prouct item from the cart.");
+//   console.log(error); 
+//     }
+
+// }
   return (
     <div className="product-style">
-      <h1>Your Products Here ...</h1>
+                  {/* <h2>Added Products ({state?.user?.role})</h2> */}
+                  
+
+      <h1 style={{color:"red"}}>Your Products Here ...</h1>
 
       {allProducts?.length ? (
+
         <div style={{ display: "flex", justifyContent: "space-around" ,flexWrap:"wrap"  }}>
           {" "}
           {allProducts.map((product) => (
@@ -45,7 +73,7 @@ const YourProducts = () => {
           ))}
         </div>
       ) : (
-        <div>No Products found!</div>
+        <div style={{color:"red"}}>No Products found!</div>
       )}
     </div>
   );

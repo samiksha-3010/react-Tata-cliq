@@ -4,6 +4,7 @@ import api from './ApiConfig';
 import toast from 'react-hot-toast';
 import AuthContext from './context/AuthContext'
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 
 function SingleProduct() {
@@ -16,7 +17,10 @@ function SingleProduct() {
     if (id) {
         async function getSingleProductData() {
             try {
-                const response = await api.post('/get-single-product-data', { productId: id })
+              const response = await axios.post(
+                "http://localhost:8000/get-single-product-data",
+                { productId: id })
+                // const response = await api.post('/get-single-product-data', { productId: id })
                 if (response.data.success) {
                     setSingleProductData(response.data.product)
                 }
@@ -30,21 +34,25 @@ function SingleProduct() {
 
   // console.log(singleProductData, "singleProductData");
 
-  async function addToCart(productId) {
+  const addCart = async (id) => {
+    // alert("working")
     try {
-      const token = JSON.parse(localStorage.getItem("token"));
-      const response = await api.post("/add-cart", { productId},{token});
-  
-      if (response.data.success) {
-        toast.success("Product added successfully to cart!!");
+      let response = await axios.post("http://localhost:8000/cart", {
+        productId: id,
+        userId: state?.user?._id,
+      });
+      console.log(response, "responce");
+      if (response?.data?.success) {
+        toast.success("Product added successfully to cart :)");
       } else {
-        toast.error("Failed to add product to cart. Please try again.");
+        toast.error("internal error");
       }
     } catch (error) {
-      console.log(error);
-      toast.error("Internal server error")
+      toast.error("oops something went wrong :( / login before add to cart");
+
+      // console.log(error);
     }
-  }
+  };
 
 
   return (
@@ -166,6 +174,14 @@ function SingleProduct() {
                                     </div>
                                     </div>
                                    </div>
+                                
+                                   <div>
+                <button style={{backgroundColor:"black",color:"white"}}>Buy Now </button>
+
+                <button style={{backgroundColor:"black",color:"white"}} onClick={() => addCart(singleProductData._id)}>
+                  Add to Bag
+                </button>
+              </div>
                                     </div>
                                     </div>
                                   <div id='more-puma'>
@@ -174,6 +190,7 @@ function SingleProduct() {
 
 
                                   </div>
+
                                   <div id='imagediv'>
                                     <div>
                                   <img src='https://img.tatacliq.com/images/i10/437Wx649H/MP000000017210419_437Wx649H_202304141358303.jpeg'/>
@@ -210,6 +227,7 @@ function SingleProduct() {
                                      ₹3985(30% off)</p>
 
                                     </div>
+             
                                     
                                   </div>
 

@@ -30,6 +30,8 @@ import AddProduct from './Tataweb/Seller/AddProduct';
 import YourProduct from './Tataweb/Seller/YourProduct';
 import Allproducts from './Tataweb/Comman/Allproducts';
 import SinglePro from './Tataweb/SinglePro';
+import EditProduct from './Tataweb/Seller/EditProduct';
+// import Nvbarstyle from './Tataweb/Nvbarstyle';
 // import SingleProduct from "./Tataweb/Comman/SingleProduct";
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
   return (
     <div>
       <Navbar/>
+      {/* <Nvbarstyle/> */}
     <Routes>
       
         <Route exact path='CartPage' element={<CartPage/>}/>
@@ -64,7 +67,9 @@ function App() {
         <Route exact path='add-product'element={<AddProduct/>}/>
         <Route exact path='your-product'element={<YourProduct/>}/>
         <Route exact path='all-products'element={<Allproducts/>}/>
-        {/* <Route exact path='singleproduct/:id'element={<SinglePro/>}/> */}
+        <Route exact path='edit-product'element={<EditProduct/>}/>
+
+        {/* <Route exact path='singleproduct/:id'element={<SingleProduct/>}/> */}
 
 
         
