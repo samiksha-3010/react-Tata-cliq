@@ -74,10 +74,10 @@ export const addToCart = async (req, res) => {
 
 export const allCartProducts = async (req, res) => {
     try {
-        const { userId } = req.body;
+        const {userId } = req.body;
         if (!userId) return res.status(404).json({ success: false, message: "User id is mandtory.." })
 
-        const user = await User.findById(userId)
+        const user = await user.findById(userId)
         if (!user) return res.status(404).json({ success: false, message: "User not found.." })
         var finalData = [];
         var array = user?.cart;

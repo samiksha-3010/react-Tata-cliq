@@ -31,15 +31,15 @@ import YourProduct from './Tataweb/Seller/YourProduct';
 import Allproducts from './Tataweb/Comman/Allproducts';
 import SinglePro from './Tataweb/SinglePro';
 import EditProduct from './Tataweb/Seller/EditProduct';
-// import Nvbarstyle from './Tataweb/Nvbarstyle';
+import Nvbarstyle from './Tataweb/Nvbarstyle';
 // import SingleProduct from "./Tataweb/Comman/SingleProduct";
 
 function App() {
 
   return (
     <div>
-      <Navbar/>
-      {/* <Nvbarstyle/> */}
+      {/* <Navbar/> */}
+      <Nvbarstyle/>
     <Routes>
       
         <Route exact path='CartPage' element={<CartPage/>}/>
